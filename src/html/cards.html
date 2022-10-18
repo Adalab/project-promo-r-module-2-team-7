@@ -23,28 +23,35 @@
     <fieldset>
       <legend> Diseña
       </legend>
-      <input type="radio" name="" id="">
-      <input type="radio" name="" id="">
-      <input type="radio" name="" id="">
+      <label>Paleta 1
+        <input type="radio" value="1" name="palette" checked />
+      </label>
+      <label>Paleta 2
+        <input type="radio" value="2" name="palette" />
+      </label>
+      <label>Paleta 3
+        <input type="radio" value="3" name="palette" />
+      </label>
     </fieldset>
     <fieldset>
       <legend> Rellena
       </legend>
-      <label for="">Nombre completo</label>
-      <input placeholder="Ej: Sally Jill">
-      <label for="">Puesto</label>
-      <input type="text" placeholder="Ej: Front-end unicorn">
-      <label for="">Imagen de perfil</label>
 
-      Añadir imagen
-      <label for="">Email</label>
-      <input type="text" placeholder="Ej: sally-hill@gmail.com">
-      <label for="">Teléfono</label>
-      <input type="text" placeholder="Ej: 555-55-55-55">
-      <label for="">Linkedin</label>
-      <input type="text" placeholder="Ej: linkedin.com/in/sally.hill">
-      <label for="">Github</label>
-      <input type="text" placeholder="Ej: @sally-hill">
+      <label for="name">Nombre completo</label>
+      <input type="text" name="name" id="name" placeholder="Ej: Sally Jill">
+      <label for="job">Profesión: </label>
+      <input type="text" name="job" id="job" placeholder="Ej: Front-end unicorn">
+      <label for="text">Imagen de perfil</label>
+      <label for="img-selector">Añadir imagen</label>
+      <input type="file" name="photo" id="img-selector">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Ej: sally-hill@gmail.com">
+      <label for="phone">Teléfono</label>
+      <input type="phone" name="phone" id="phone" placeholder="Ej: 555-55-55-55">
+      <label for="linkedin">Linkedin</label>
+      <input type="linkedin" name="linkedin" id="linkedin" placeholder="Ej: linkedin.com/in/sally.hill">
+      <label for="github">GitHub</label>
+      <input type="github" name="github" id="github" placeholder="Ej: @sally-hill">
 
     </fieldset>
     <fieldset>
