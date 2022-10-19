@@ -16,51 +16,26 @@
 </head>
 
 <body>
-  <header></header>
-  <main></main>
-  <section></section>
-  <section>
-    <fieldset>
-      <legend> Diseña
-      </legend>
-      <label>Paleta 1
-        <input type="radio" value="1" name="palette" checked />
-      </label>
-      <label>Paleta 2
-        <input type="radio" value="2" name="palette" />
-      </label>
-      <label>Paleta 3
-        <input type="radio" value="3" name="palette" />
-      </label>
-    </fieldset>
-    <fieldset>
-      <legend> Rellena
-      </legend>
+  <!--header-->
+  <include src="./partials/header.html"></include>
 
-      <label for="name">Nombre completo</label>
-      <input type="text" name="name" id="name" placeholder="Ej: Sally Jill">
-      <label for="job">Profesión: </label>
-      <input type="text" name="job" id="job" placeholder="Ej: Front-end unicorn">
-      <label for="text">Imagen de perfil</label>
-      <label for="img-selector">Añadir imagen</label>
-      <input type="file" name="photo" id="img-selector">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="Ej: sally-hill@gmail.com">
-      <label for="phone">Teléfono</label>
-      <input type="phone" name="phone" id="phone" placeholder="Ej: 555-55-55-55">
-      <label for="linkedin">Linkedin</label>
-      <input type="linkedin" name="linkedin" id="linkedin" placeholder="Ej: linkedin.com/in/sally.hill">
-      <label for="github">GitHub</label>
-      <input type="github" name="github" id="github" placeholder="Ej: @sally-hill">
-
-    </fieldset>
-    <fieldset>
-      <legend> Comparte
-      </legend>
-    </fieldset>
-
-  </section>
-  <footer></footer>
+  <main>
+    <!--preview-->
+    <include src="./partials/preview.html"></include>
+    <!--form-->
+    <section>
+      <form>
+        <!--design-->
+        <include src="./partials/design-cards.html"></include>
+        <!--fill-->
+        <include src="./partials/fill-cards.html"></include>
+        <!--share-->
+        <include src="./partials/share-cards.html"></include>
+      </form>
+    </section>
+  </main>
+  <!--footer-->
+  <include src="./partials/footer.html"></include>
 
   <script src="./assets/js/main.js"></script>
 </body>
