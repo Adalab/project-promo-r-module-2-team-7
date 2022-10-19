@@ -1,0 +1,13 @@
+.profile-cards{
+    width: 250px;
+    margin: 100px 0 20px 30px;
+}
+
+/*  TABLET  */
+
+@media all and (min-width: 768px) {
+    .profile-cards{
+        width: 420px;
+        margin: 355px 0 30px 170px;
+    }
+}
