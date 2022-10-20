@@ -5,7 +5,12 @@ footer{
     border-top: 1.5px solid $color-black-white;
     margin-top: 20px;
     padding: 20px;
-}
+    @media all and (min-width: 768px) {
+            flex-direction: row;   
+            justify-content: space-between;
+            margin: -8px;
+        }
+    }
 
 .copy{
     font-family: $font-familyOpenSans;
@@ -16,16 +21,7 @@ footer{
 .logo{
     width: 100px;
     margin-top: 10px;
-}
-
-/*  TABLET  */
-
-@media all and (min-width: 768px) {
-    .copy{
-        justify-content: left;
-    }
-    .logo{
-        width: 150px;
-        justify-content: right;
+    @media all and (min-width: 768px) {
+        width: 108px;
     }
 }
