@@ -1,0 +1,25 @@
+.fill {
+    // border: 0;;
+    // font-family: $font-familyOpenSans;
+    // color: $color-gunmetal;
+    // border-bottom: rem(1);
+    // border-color: $color-white-two;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__intro {
+
+    }
+}
+
+
+
+
+
+
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
