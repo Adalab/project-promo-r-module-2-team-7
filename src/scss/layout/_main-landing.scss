@@ -9,23 +9,24 @@
 .h1 {
   font-family: $font-familyMerriWeather;
   color: $color-dull-orange;
-  font-size: 19.2px;
+  font-size: rem(19.2);
   font-weight: 900;
   margin-top: 35.4px;
   @media all and (min-width: 768px) {
-    font-size: 24px;
+    font-size: rem(24);
     margin-top: 31px;
   }
 }
 .subtitle-main {
   max-width: 268px;
   text-align: center;
-  font-size: 12.8px;
+  font-size: rem(12.8);
+  
 
   color: $color-dark-green-blue;
   @media all and (min-width: 768px) {
     max-width: 320px;
-    font-size: 16px;
+    font-size: rem(16);
   }
 }
 .box {
@@ -57,18 +58,19 @@
    
   }
   &--text {
-    font-size: 12.8px;
+    font-size: rem(12.8);
+    
    
     @media all and (min-width: 768px){
-        font-size: 16px;
+      font-size: rem(16);
 }
 }
 }
 .icon-main {
-  font-size: 22.4px;
+  font-size: rem(22.4);
   color: $color-dull-orange;
   @media all and (min-width: 768px){
-    font-size: 28px;
+    font-size: rem(28);
   }
 }
 
