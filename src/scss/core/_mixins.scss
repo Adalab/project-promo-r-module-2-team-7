@@ -2,3 +2,19 @@
     font-size: rem(18);
     font-weight: 600;
 }
+
+@mixin labelsForm() {
+    color: $color-dark-green-blue;
+    font-size: rem(14);
+}
+
+@mixin boxesForm() {
+    border: solid 1px $color-hospital-green;
+    width: 100vw;
+    height: rem(30);
+    margin-top: rem(7);
+    color: $color-extra-light-grey;
+    font-size: rem(14);
+    padding-left: rem(10);
+    margin-bottom: rem(18);
+}
