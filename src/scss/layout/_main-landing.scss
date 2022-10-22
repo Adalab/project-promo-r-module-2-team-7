@@ -4,33 +4,31 @@
   justify-content: center;
   align-items: center;
   background-color: $color-white-four;
-  font-family: $font-familyOpenSans;
-}
-.h1 {
-  font-family: $font-familyMerriWeather;
-  color: $color-dull-orange;
-  font-size: rem(19.2);
-  font-weight: 900;
-  margin-top: 35.4px;
-  @media all and (min-width: 768px) {
-    font-size: rem(24);
-    margin-top: 31px;
+  &__h1 {
+    font-family: $font-familyMerriWeather;
+    color: $color-dull-orange;
+    font-size: rem(19.2);
+    font-weight: 900;
+    margin-top: 35.4px;
+    @media all and (min-width: 768px) {
+      font-size: rem(24);
+      margin-top: 31px;
+    }
+  }
+  &__subtitle {
+    max-width: 268px;
+    text-align: center;
+    font-size: rem(12.8);
+    color: $color-dark-green-blue;
+    @media all and (min-width: 768px) {
+      max-width: 320px;
+      font-size: rem(16);
+    }
   }
 }
-.subtitle-main {
-  max-width: 268px;
-  text-align: center;
-  font-size: rem(12.8);
-  
 
-  color: $color-dark-green-blue;
-  @media all and (min-width: 768px) {
-    max-width: 320px;
-    font-size: rem(16);
-  }
-}
+
 .box {
-
   width: 268px;
   height: 73.8px;
   padding: 15px 31.5px 17.8px 31.5px;
@@ -42,7 +40,7 @@
   border: solid 1.6px $color-dull-orangeop;
   color: $color-gunmetal;
 
-  @media all and (min-width: 768px){
+  @media all and (min-width: 768px) {
     border-radius: 5px;
     border: solid 2px $color-dull-orangeop;
     margin-top: 27px;
@@ -51,25 +49,22 @@
     height: 86px;
     padding: 15px 20 22px 5px;
   }
-  &--element {
+  &__element {
     align-items: center;
     text-align: center;
-    opacity:unset;
-   
+    opacity: unset;
   }
-  &--text {
+  &__text {
     font-size: rem(12.8);
-    
-   
-    @media all and (min-width: 768px){
+    @media all and (min-width: 768px) {
       font-size: rem(16);
-}
-}
+    }
+  }
 }
 .icon-main {
   font-size: rem(22.4);
   color: $color-dull-orange;
-  @media all and (min-width: 768px){
+  @media all and (min-width: 768px) {
     font-size: rem(28);
   }
 }
@@ -86,7 +81,7 @@
   width: 129px;
   height: 42px;
   background-color: #438792;
-  @media all and (min-width: 768px){
+  @media all and (min-width: 768px) {
     margin-top: 186px;
     width: 129px;
     height: 42px;
