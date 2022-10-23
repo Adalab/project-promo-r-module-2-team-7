@@ -1,0 +1,46 @@
+.fill {
+//     // border: 0;;
+//     // font-family: $font-familyOpenSans;
+//     // color: $color-gunmetal;
+//     // border-bottom: rem(1);
+//     // border-color: $color-white-two;
+    &__div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(12);
+        &__label {
+            @include labelsForm();
+        }
+        &__input {
+            @include boxesForm();
+        }
+        &__boxes {
+            display: flex;
+            gap: rem(20);
+            align-items: center;
+            margin-top: rem(7);
+            margin-bottom: rem(20);
+            &__orange {
+                border-radius: 3px;
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+                background-color: $color-dull-orange;
+                color: $color-white-two;
+                font-size: rem(14);
+                text-align: center;
+                padding: 3px 22px 7px 22px;
+            }
+            &__empty {
+                @include boxesForm();
+                width: rem(30);
+                height: rem(30);
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+
+
+
+

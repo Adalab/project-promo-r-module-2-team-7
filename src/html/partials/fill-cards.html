@@ -1,21 +1,33 @@
-<fieldset>
-    <legend> Rellena
-    </legend>
-
-    <label for="name">Nombre completo</label>
-    <input type="text" name="name" id="name" placeholder="Ej: Sally Jill">
-    <label for="job">Profesión: </label>
-    <input type="text" name="job" id="job" placeholder="Ej: Front-end unicorn">
-    <label for="text">Imagen de perfil</label>
-    <label for="img-selector">Añadir imagen</label>
-    <input type="file" name="photo" id="img-selector">
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" placeholder="Ej: sally-hill@gmail.com">
-    <label for="phone">Teléfono</label>
-    <input type="phone" name="phone" id="phone" placeholder="Ej: 555-55-55-55">
-    <label for="linkedin">Linkedin</label>
-    <input type="linkedin" name="linkedin" id="linkedin" placeholder="Ej: linkedin.com/in/sally.hill">
-    <label for="github">GitHub</label>
-    <input type="github" name="github" id="github" placeholder="Ej: @sally-hill">
+<fieldset class="fill">
+    <div class="fill__intro">
+        <i class="fa-solid fa-keyboard box--element icon-main fill_icon"></i>
+        <legend class="fill__title"> Rellena
+        </legend>
+    </div>
+    <i class="fa-light fa-angle-up design__arrow-up arrow-up"></i>
+    <!-- <i class="fa-light fa-angle-down design__arrow arrow-down"></i> -->
+    <!--dif for the compression?-->
+    <div class="fill__div">
+        <label class="fill__div__label" for="name">Nombre completo</label>
+        <input class="fill__div__input" type="text" name="name" id="name" placeholder="Ej: Sally Jill">
+        <label class="fill__div__label" for="job">Profesión: </label>
+        <input class="fill__div__input" type="text" name="job" id="job" placeholder="Ej: Front-end unicorn">
+        <label class="fill__div__label" for="text">Imagen de perfil</label>
+        <!--orange button-->
+        <div class="fill__div__boxes">
+            <label class="fill__div__boxes__orange" for="img-selector">Añadir imagen</label>
+            <div class="fill__div__boxes__empty"></div>
+        </div>
+        <!--white box-->
+        <label class="fill__div__label" for="email">Email</label>
+        <input class="fill__div__input" type="email" name="email" id="email" placeholder="Ej: sally-hill@gmail.com">
+        <label class="fill__div__label" for="phone">Teléfono</label>
+        <input class="fill__div__input" type="phone" name="phone" id="phone" placeholder="Ej: 555-55-55-55">
+        <label class="fill__div__label" for="linkedin">Linkedin</label>
+        <input class="fill__div__input" type="linkedin" name="linkedin" id="linkedin"
+            placeholder="Ej: linkedin.com/in/sally.hill">
+        <label class="fill__div__label" for="github">GitHub</label>
+        <input class="fill__div__input" type="github" name="github" id="github" placeholder="Ej: @sally-hill">
+    </div>
 
 </fieldset>
