@@ -1,26 +1,30 @@
 'use strict';
 
 // Create variable for article and radio button
-const previewArticleElement = document.querySelector('.article');
-const radioButton = document.querySelector('.design__palette__box--selector');
+const previewArticleElement = document.querySelector('.js-article');
+const radioInput =  document.querySelector('.design__palette');
 
 //Even listener for color palette changes in article
 
-radioButton.addEventListener('click',()=>{
-    if(radioButton.value = 1){
-        previewArticleElement.classList.add('paletteOne'); 
+radioInput.addEventListener('click',(event)=>{
+    console.log(event.target.tagName);
+    if(event.target.tagName === 'INPUT' && event.target.getAttribute('type') === 'radio' && event.target.value === '1' ){
+        console.log('paletteone');
         previewArticleElement.classList.remove('paletteTwo'); 
         previewArticleElement.classList.remove('paletteThree'); 
+        previewArticleElement.classList.add('paletteOne');    
     }
-    if(radioButton.value = 2){
+    if (event.target.tagName === 'INPUT' && event.target.getAttribute('type') === 'radio' && event.target.value === '2' ){
+        console.log('palettetwo');
+        previewArticleElement.classList.remove('paletteOne'); 
+        previewArticleElement.classList.remove('paletteThree'); 
         previewArticleElement.classList.add('paletteTwo');
-        previewArticleElement.classList.remove('paletteOne'); 
-        previewArticleElement.classList.remove('paletteThree'); 
     }
-    if(radioButton.value = 3){
-        previewArticleElement.classList.add('paletteThree');
+    if(event.target.tagName === 'INPUT' && event.target.getAttribute('type') === 'radio' && event.target.value === '3' ){
+        console.log('palettethree');
         previewArticleElement.classList.remove('paletteOne'); 
         previewArticleElement.classList.remove('paletteTwo'); 
+        previewArticleElement.classList.add('paletteThree');
     }
 });
 
@@ -38,10 +42,10 @@ const linkedinInput = document.querySelector('.js-linkedin-input');
 const githubInput = document.querySelector('.js-github-input');
 
 //Create variables with article elements
-const previewArticleTitle = document.querySelector('.article__header--title');
-const previewArticleSubtitle = document.querySelector('.article__header--subtitle');
-const previewArticlePhoto = document.querySelector('.article__photo');
-const previewArticleLinks = document.querySelector('.article__nav--link');
+const previewArticleTitle = document.querySelector('.js-article-title');
+const previewArticleSubtitle = document.querySelector('.js-article-subtitle');
+const previewArticlePhoto = document.querySelector('.js-article-photo');
+const previewArticleLinks = document.querySelector('.js-article-link');
 
 
 //Even listener for reset button, empty all inputs
