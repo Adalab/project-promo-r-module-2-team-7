@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
 }
-// input { //in reset
+// input[type="radio"] { //in reset
 //     -webkit-appearance: none;
 //     -moz-appearance: none;
 //     appearance: none;
-//   }
+// }
 :root {
   font-family: $font-familyOpenSans;
 }
