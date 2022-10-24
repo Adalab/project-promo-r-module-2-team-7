@@ -27,3 +27,14 @@
     font-size: 18px;
     text-align: right;
 }
+
+@mixin iconForm() {
+    font-size: rem(18); //to be checked
+}
+
+@mixin resetBorderForm() {
+    border: 0; 
+    border-bottom: rem(1);
+    border-color: $color-white-two;
+    border-bottom: 1px solid $color-light-grey-margins;
+}

@@ -1,4 +1,5 @@
 .fill {
+    @include resetBorderForm;
     &__head {
         margin-top: rem(10);
         display: flex;
@@ -7,6 +8,9 @@
             display: flex;
             gap: rem(10);
             margin-bottom: rem(30);
+        }
+        &__icon {
+        @include iconForm();    
         }
         &__title {
         @include titleForm();
