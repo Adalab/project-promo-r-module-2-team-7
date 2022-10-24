@@ -1,4 +1,8 @@
-@mixin titleCardsForm() {
+//Forms
+
+@mixin titleForm() {
+    text-transform: uppercase;
+    color: $color-gunmetal;
     font-size: rem(18);
     font-weight: 600;
 }
@@ -13,8 +17,24 @@
     width: 100vw;
     height: rem(30);
     margin-top: rem(7);
-    color: $color-extra-light-grey;
     font-size: rem(14);
     padding-left: rem(10);
     margin-bottom: rem(18);
+}
+
+@mixin arrow() {
+    color: $color-gunmetal;
+    font-size: 18px;
+    text-align: right;
+}
+
+@mixin iconForm() {
+    font-size: rem(18); //to be checked
+}
+
+@mixin resetBorderForm() {
+    border: 0; 
+    border-bottom: rem(1);
+    border-color: $color-white-two;
+    border-bottom: 1px solid $color-light-grey-margins;
 }

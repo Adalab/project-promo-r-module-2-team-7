@@ -1,43 +1,24 @@
 .fill {
-//     // border: 0;;
-//     // font-family: $font-familyOpenSans;
-//     // color: $color-gunmetal;
-//     // border-bottom: rem(1);
-//     // border-color: $color-white-two;
-border: 0; 
-text-transform: uppercase;
-font-family: $font-familyOpenSans;
-color: $color-gunmetal;
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto auto;
-border-bottom: rem(1);
-border-color: $color-white-two;
-&__intro {
-display: flex;
-gap: rem(10);
-grid-column: 1/2;
-grid-row: 1/2;
-margin-bottom: rem(30);
-align-items: center;
-}
-&__icon {
-order: -1;
-font-size: rem(18);
-}
-&__title { //mixin
-@include titleCardsForm();
-}
-&__arrow-up { //mixin with -down
-grid-column: 2/3;
-grid-row: 1/2;
-color: $color-gunmetal;
-font-size: 18px;
-text-align: right;
-}
-// &__down {
-//     display: none;
-// }
+    @include resetBorderForm;
+    &__head {
+        margin-top: rem(10);
+        display: flex;
+        justify-content: space-between;
+        &__intro {
+            display: flex;
+            gap: rem(10);
+            margin-bottom: rem(30);
+        }
+        &__icon {
+        @include iconForm();    
+        }
+        &__title {
+        @include titleForm();
+        }
+        &__arrow {
+        @include arrow();
+        }
+    }
     &__div {
         display: flex;
         flex-direction: column;
@@ -70,7 +51,6 @@ text-align: right;
                 margin: 0;
             }
         }
-
     }
 }
 

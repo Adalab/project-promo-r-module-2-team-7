@@ -1,86 +1,90 @@
-//background in main
-//left margin in main
-//top margin + right margin
-
 .design {
-    border: 0; 
-    text-transform: uppercase;
-    font-family: $font-familyOpenSans;
-    color: $color-gunmetal;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    border-bottom: rem(1);
-    border-color: $color-white-two;
-    &__intro {
-    display: flex;
-    gap: rem(10);
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-bottom: rem(30);
-    align-items: center;
-    }
-    &__icon {
-    order: -1;
-    font-size: rem(18);
-    }
-    &__title { //mixin
-    @include titleCardsForm();
-    }
-    &__arrow-up { //mixin with -down
-    grid-column: 2/3;
-    grid-row: 1/2;
-    color: $color-gunmetal;
-    font-size: 18px;
-    text-align: right;
-    }
-    // &__down {
-    //     display: none;
-    // }
-    &__p {
-    font-size: rem(14);
-    grid-column: 1/2;
-    grid-row: 2/3;
+    @include resetBorderForm;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        &__intro {
+            display: flex;
+            gap: rem(10);
+            margin-bottom: rem(30);
+            }
+            &__icon {
+            order: -1;
+            @include iconForm();
+            }
+            &__title {
+            @include titleForm();
+        }
+        &__arrow {
+            @include arrow();
+        }
     }
     &__palette {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    &__palette__box {
-        display: flex;
-        &--1left {
-            background-color: $color-dark-green-blue;
+        margin-bottom: rem(20);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: rem(5);
+        &__p {
+            color: $color-gunmetal;
+            font-size: rem(14);
+            text-transform: uppercase;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            margin-left: rem(25);
         }
-        &--1middle {
-            background-color: $color-dirty-blue;
-        }
-        &--1right {
-            background-color: $color-hospital-green;
-        }
-        &--2left {
-            background-color: $color-dried-blood;
-        }
-        &--2middle {
-            background-color: $color-rusty-red;
-        }
-        &--2right {
-            background-color: $color-tomato;
-        }
-        &--3left {
-            background-color: $color-slate;
-        }
-        &--3middle {
-            background-color: $color-faded-orange;
-        }
-        &--3right {
-            background-color: $color-light-grey-blue;
-        }
-        &--selector {
-            margin-right: rem(10); //how to change the dot in radio
+        &__box {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            display: flex;
+            justify-self: end;
+            margin-bottom: rem(15);
+            &--1 {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+            &--2 {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+            &--3 {
+                grid-column: 2/3;
+                grid-row: 3/4;
+            }
+            &--1left {
+                background-color: $color-dark-green-blue;
+            }
+            &--1middle {
+                background-color: $color-dirty-blue;
+            }
+            &--1right {
+                background-color: $color-hospital-green;
+            }
+            &--2left {
+                background-color: $color-dried-blood;
+            }
+            &--2middle {
+                background-color: $color-rusty-red;
+            }
+            &--2right {
+                background-color: $color-tomato;
+            }
+            &--3left {
+                background-color: $color-slate;
+            }
+            &--3middle {
+                background-color: $color-faded-orange;
+            }
+            &--3right {
+                background-color: $color-light-grey-blue;
+            }
+            &--selector {
+                margin-right: rem(10); //how to change the dot in radio
+            }
         }
     }
 }
-.minibox { //review nesting
+.minibox {
     width: 30px;
     height: 25px;
 }

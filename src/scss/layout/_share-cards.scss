@@ -21,7 +21,7 @@
   }
   &__title {
     //mixin
-    @include titleCardsForm();
+    @include titleForm()
   }
 
   .share__div {
