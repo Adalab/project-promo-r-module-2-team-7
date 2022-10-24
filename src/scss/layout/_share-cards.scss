@@ -4,7 +4,7 @@
   color: $color-gunmetal;
   border-bottom: rem(1);
   border-color: $color-white-two;
-  &__intro {
+  &__head {
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(30);
@@ -30,8 +30,8 @@
     align-items: center;
   }
 
-  /* 
-.createbutton-on{
+  
+.createbutton-of{
     margin-top: 33px;
     background-color: $color-grey-not-orange;
     font-size: rem(18);
@@ -42,8 +42,8 @@
     border-radius: 12px;
     font-weight: 600;
       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-} */
-  .createbutton-of {
+}
+  .createbutton-on {
     margin-top: 33px;
     background-color: $color-dull-orange;
     font-size: rem(18);

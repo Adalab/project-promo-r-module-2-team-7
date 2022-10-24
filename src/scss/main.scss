@@ -14,3 +14,9 @@
 @import 'layout/share-cards'; */
 @import 'pages/cards';
 
+.collapsed {
+    display: none;
+  }
+.flip{
+  transform: rotate(180deg);
+}
