@@ -1,12 +1,5 @@
-//background in main
-//left margin in main
-//top margin + right margin
-
 .design {
     border: 0; 
-    text-transform: uppercase;
-    font-family: $font-familyOpenSans;
-    color: $color-gunmetal;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -24,30 +17,29 @@
     order: -1;
     font-size: rem(18);
     }
-    &__title { //mixin
-    @include titleCardsForm();
+    &__title {
+    @include titleForm();
     }
-    &__arrow-up { //mixin with -down
+    &__arrow {
     grid-column: 2/3;
     grid-row: 1/2;
-    color: $color-gunmetal;
-    font-size: 18px;
-    text-align: right;
+    @include arrow();
     }
-    // &__down {
-    //     display: none;
-    // }
     &__p {
     font-size: rem(14);
     grid-column: 1/2;
     grid-row: 2/3;
+    text-transform: uppercase;
     }
     &__palette {
         grid-column: 2/3;
         grid-row: 2/3;
+        justify-self: end;
+        margin-bottom: rem(20);
     }
     &__palette__box {
         display: flex;
+        margin-bottom: rem(20);
         &--1left {
             background-color: $color-dark-green-blue;
         }

@@ -1,9 +1,20 @@
 .fill {
-//     // border: 0;;
-//     // font-family: $font-familyOpenSans;
-//     // color: $color-gunmetal;
-//     // border-bottom: rem(1);
-//     // border-color: $color-white-two;
+    &__head {
+        margin-top: rem(10);
+        display: flex;
+        justify-content: space-between;
+        &__intro {
+            display: flex;
+            gap: rem(10);
+            margin-bottom: rem(30);
+        }
+        &__title {
+        @include titleForm();
+        }
+        &__arrow {
+        @include arrow();
+        }
+    }
     &__div {
         display: flex;
         flex-direction: column;
@@ -36,7 +47,6 @@
                 margin: 0;
             }
         }
-
     }
 }
 
