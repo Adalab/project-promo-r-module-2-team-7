@@ -3,7 +3,7 @@
 // Create variable for article and radio button
 const previewArticleElement = document.querySelector('.js-article');
 const radioInput =  document.querySelector('.design__palette');
-
+/*
 //Even listener for color palette changes in article
 
 radioInput.addEventListener('click',(event)=>{
@@ -27,34 +27,34 @@ radioInput.addEventListener('click',(event)=>{
         previewArticleElement.classList.add('paletteThree');
     }
 });
-
+*/
 //Test adding classes to HTML element
-/*const radioInput = document.querySelector('.design__palette__box');
 const paletteOne =  document.querySelector('.js-palette-one');
 const paletteTwo =  document.querySelector('.js-palette-two');
-const paletteThree =  document.querySelector('.js-palette-three');*/
-/*
-radioInput.addEventListener('click',(event)=>{
-    console.log('event.target.tagName');
-    if(radioInput.classList.contains('js-palette-one') ){
-        console.log('paletteone');
-        previewArticleElement.classList.remove('paletteTwo'); 
-        previewArticleElement.classList.remove('paletteThree'); 
-        previewArticleElement.classList.add('paletteOne');    
-    }
-    else if(radioInput.classList.contains('js-palette-two') ){
-        console.log('palettetwo');
-        previewArticleElement.classList.remove('paletteOne'); 
-        previewArticleElement.classList.remove('paletteThree'); 
-        previewArticleElement.classList.add('paletteTwo');
-    }
-    else{
-        console.log('palettethree');
-        previewArticleElement.classList.remove('paletteOne'); 
-        previewArticleElement.classList.remove('paletteTwo'); 
-        previewArticleElement.classList.add('paletteThree');
-    }
-});*/
+const paletteThree =  document.querySelector('.js-palette-three');
+
+paletteOne.addEventListener('click',()=>{
+    console.log('paletteone');
+    previewArticleElement.classList.remove('paletteTwo'); 
+    previewArticleElement.classList.remove('paletteThree'); 
+    previewArticleElement.classList.add('paletteOne');    
+});
+
+
+paletteTwo.addEventListener('click',()=>{
+    console.log('palettetwo');
+    previewArticleElement.classList.remove('paletteOne'); 
+    previewArticleElement.classList.remove('paletteThree'); 
+    previewArticleElement.classList.add('paletteTwo');
+});
+
+paletteThree.addEventListener('click',()=>{
+    console.log('palettethree');
+    previewArticleElement.classList.remove('paletteOne'); 
+    previewArticleElement.classList.remove('paletteTwo'); 
+    previewArticleElement.classList.add('paletteThree');
+});
+
 
 /*
 // Create variable for reset button
