@@ -1,0 +1,116 @@
+.share {
+  border: 0;
+ 
+  color: $color-gunmetal;
+  border-bottom: rem(1);
+  border-color: $color-white-two;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(30);
+    align-items: center;
+    &--titlebox{
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+    }
+  }
+  &__icon {
+    margin-right: 12px;
+    font-size: rem(18);
+  }
+  &__title {
+    //mixin
+    @include titleForm()
+  }
+
+  .share__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+.createbutton-of{
+    margin-top: 33px;
+    background-color: $color-grey-not-orange;
+    font-size: rem(18);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 13px 18px 13px 17px;
+    color: $color-white-two;
+    border-radius: 12px;
+    font-weight: 600;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+}
+  .createbutton-on {
+    margin-top: 33px;
+    background-color: $color-dull-orange;
+    font-size: rem(18);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 13px 18px 13px 17px;
+    color: $color-white-two;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  }
+  .icon-id {
+    color: $color-white-two;
+    margin-right: 9px;
+  }
+  .lineRectangle {
+    width: 280px;
+    height: 1px;
+    background-color: #d8d8d8;
+    margin: 30px 30px 20px 0;
+    @media all and (min-width: 768px) {
+      width: 329px;
+    }
+  }
+  .shareresultbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    &__text {
+      color: $color-gunmetal;
+      font-size: rem(18);
+      margin-bottom: 5px;
+    }
+    &__link {
+      font-size: rem(12);
+      color: $color-dull-orange;
+    }
+    &__twitterbox {
+      margin-left: 20%;
+      margin-right: 20%;
+      background-color: #00a0f5;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      margin-top: 10px;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      &--twitter {
+        text-decoration: none;
+        color: $color-white-two;
+        padding: 3px 9px 6px 10.5px;
+        font-size: rem(14);
+        line-height: 1.43;
+      }
+    }
+  }
+
+  .tweet-icon {
+    align-items: center;
+    font-size: rem(18);
+    margin-right: 9.5px;
+  }
+  .share__arrow-up {
+    color: $color-gunmetal;
+  }
+  .collapsed {
+    display: none;
+  }
+}

@@ -1,14 +1,14 @@
 header{
     display: flex;
     justify-content: center;
-    background-color: $color-white-four;
 }
 
 .profile-cards{
-    margin: rem(95) rem(86) rem(95) rem(110);
-    width: rem(250);
+  /*   margin-top: 95px; */
+  align-items: flex-end;
+/*     width: 250px; */
     @media all and (min-width: 768px) {
-        margin-top: rem(350);
-        width: rem(420);
+    /*     margin-top: 350px; */
+        width: 420px;
     }
 }

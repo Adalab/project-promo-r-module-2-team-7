@@ -4,6 +4,7 @@
 @import 'core/mixins';
 @import 'components/code';
 @import 'components/links';
+@import 'layout/mainpage';
 @import 'layout/header-landing';
 @import 'layout/main-landing';
 @import 'layout/preview';
@@ -13,3 +14,9 @@
 @import 'layout/fill-cards';
 @import 'layout/design-cards';
 @import 'layout/share-cards';
+.collapsed {
+  display: none;
+}
+.flip{
+transform: rotate(180deg);
+}

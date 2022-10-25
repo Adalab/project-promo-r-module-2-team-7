@@ -2,26 +2,32 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-top: rem(1.5) solid $color-black-white;
-    margin-top: rem(20);
-    padding: rem(20);
+    justify-content: center;
+    
+    border-top: 1.5px solid $color-black-white;
+   /*  margin-top: 20px; */
+   padding: 18px 61px 20px 61px;
     @media all and (min-width: 768px) {
             flex-direction: row;   
             justify-content: space-between;
-            margin: rem(-8);
+            align-items: center;
+      /*       margin: -8px; */
+      padding: 10px 40px 10px 40px;
         }
     }
 
 .copy{
     font-family: $font-familyOpenSans;
-    font-size: rem(14);
-    color: $color-light-grey;
+    font-size: 14px;
+    color: #d5d5d5;
+ 
 }
 
 .logo{
-    width: rem(100);
-    margin-top: rem(10);
+    width: 103px;
+    margin-top: 12px;
     @media all and (min-width: 768px) {
-        width: rem(108);
+        width: 108px;
+        margin-top: 0px;
     }
 }

@@ -1,0 +1,18 @@
+.headermain-main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white-four;
+    @media all and (min-width: 768px) {
+        height: 94vh;
+    }
+ 
+}
+.footer-main{
+    height: 10vh;
+    @media all and (min-width: 768px) {
+        height: 6vh;
+    }
+}
