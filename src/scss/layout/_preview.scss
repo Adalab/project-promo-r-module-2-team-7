@@ -27,6 +27,7 @@
 
 /*Reset button*/
 .reset{
+    cursor: pointer;
     /*Add position to replace icon*/
     position: relative;
     /*General properties*/
@@ -140,14 +141,14 @@
 
 .paletteTwo{
     .article__header{
-        border-left-color: #bd1010; //Change for variable
+        border-left-color: $color-rusty-red; 
     } 
     .article__header--title{
-        color: #420101; //Change for variable
+        color: $color-dried-blood; 
     }
     .article__nav--link{
-        border-color: #e95626; //Change for variable
-        color: #420101; //Change for variable 
+        border-color: $color-tomato; 
+        color: $color-dried-blood; 
     }
 }
 
@@ -155,13 +156,13 @@
 
 .paletteThree{
     .article__header{
-        border-left-color: #eab052; //Change for variable
+        border-left-color: $color-faded-orange; 
     } 
     .article__header--title{
-        color: #3e5b65; //Change for variable
+        color: $color-slate; 
     }
     .article__nav--link{
-        border-color: #a0c0cf; //Change for variable
-        color: #3e5b65; //Change for variable
+        border-color: $color-light-grey-blue; 
+        color: $color-slate; 
     }
 }
