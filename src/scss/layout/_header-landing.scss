@@ -5,10 +5,10 @@ header{
 }
 
 .profile-cards{
-    margin-top: 95px;
-    width: 250px;
+    margin: rem(95) rem(86) rem(95) rem(110);
+    width: rem(250);
     @media all and (min-width: 768px) {
-        margin-top: 350px;
-        width: 420px;
+        margin-top: rem(350);
+        width: rem(420);
     }
 }

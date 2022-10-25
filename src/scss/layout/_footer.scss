@@ -2,26 +2,26 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-top: 1.5px solid $color-black-white;
-    margin-top: 20px;
-    padding: 20px;
+    border-top: rem(1.5) solid $color-black-white;
+    margin-top: rem(20);
+    padding: rem(20);
     @media all and (min-width: 768px) {
             flex-direction: row;   
             justify-content: space-between;
-            margin: -8px;
+            margin: rem(-8);
         }
     }
 
 .copy{
     font-family: $font-familyOpenSans;
-    font-size: 14px;
+    font-size: rem(14);
     color: $color-light-grey;
 }
 
 .logo{
-    width: 100px;
-    margin-top: 10px;
+    width: rem(100);
+    margin-top: rem(10);
     @media all and (min-width: 768px) {
-        width: 108px;
+        width: rem(108);
     }
 }
