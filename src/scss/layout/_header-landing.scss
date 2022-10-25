@@ -1,14 +1,9 @@
-header{
+.profile-cardslanding{
+    align-self: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
 }
 
-.profile-cards{
-  /*   margin-top: 95px; */
-  align-items: flex-end;
-/*     width: 250px; */
-    @media all and (min-width: 768px) {
-    /*     margin-top: 350px; */
-        width: 420px;
-    }
-}

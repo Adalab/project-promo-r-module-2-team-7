@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $color-white-four;
+
   &__h1 {
     font-family: $font-familyMerriWeather;
     color: $color-dull-orange;
@@ -87,5 +87,14 @@
     width: 129px;
     height: 42px;
     margin-bottom: 59px;
+  }
+  &:hover {
+
+    background-color:$color-dull-orange;
+    transform: scale(1.1, 1.1);
+    transition: transform 2s;
+  }
+  &:not(:hover) {
+    transition: transform 2s;
   }
 }

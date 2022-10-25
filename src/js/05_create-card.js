@@ -1,4 +1,4 @@
-'use strict';
+/* 'use strict';
 
 const createButton = document.querySelector('.js-create-button');
 const shareResultBox = document.querySelector('.js-share-result-box');
@@ -70,3 +70,4 @@ shareHead.addEventListener('click', (event) => {
     }
 });
 
+ */

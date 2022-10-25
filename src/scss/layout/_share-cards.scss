@@ -1,37 +1,36 @@
 .share {
-  border: 0;
- 
-  color: $color-gunmetal;
-  border-bottom: rem(1);
-  border-color: $color-white-two;
+  @include resetBorderForm;
   &__head {
+    cursor: pointer;
+    margin-top: rem(10);
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(30);
     align-items: center;
-    &--titlebox{
-        text-transform: uppercase;
+    &__intro{
         display: flex;
         align-items: center;
+        gap: rem(10);
     }
+   
   }
   &__icon {
-    margin-right: 12px;
-    font-size: rem(18);
+    @include iconForm();    
+    background-color: #00a0f5;
   }
   &__title {
     //mixin
     @include titleForm()
   }
-
-  .share__div {
+  &__div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+ 
   
 .createbutton-of{
+  cursor: pointer;
     margin-top: 33px;
     background-color: $color-grey-not-orange;
     font-size: rem(18);
@@ -42,8 +41,16 @@
     border-radius: 12px;
     font-weight: 600;
       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      &:hover {
+        transform: scale(1.1,1.1);
+        transition: transform 2s;
+      }
+      &:not(:hover) {
+        transition: transform 2s;
+      }
 }
   .createbutton-on {
+    cursor: pointer;
     margin-top: 33px;
     background-color: $color-dull-orange;
     font-size: rem(18);
@@ -54,6 +61,13 @@
     border-radius: 12px;
     font-weight: 600;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    &:hover {
+      transform: scale(1.1,1.1);
+      transition: transform 2s;
+    }
+    &:not(:hover) {
+      transition: transform 2s;
+    }
   }
   .icon-id {
     color: $color-white-two;
@@ -61,8 +75,9 @@
   }
   .lineRectangle {
     width: 280px;
-    height: 1px;
-    background-color: #d8d8d8;
+    height: 4px;
+    
+    background-color: rebeccapurple;
     margin: 30px 30px 20px 0;
     @media all and (min-width: 768px) {
       width: 329px;
