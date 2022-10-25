@@ -4,11 +4,19 @@
 @import 'core/mixins';
 @import 'components/code';
 @import 'components/links';
+@import 'layout/mainpage';
 @import 'layout/header';
 @import 'layout/main-landing';
 @import 'layout/preview';
 @import 'layout/footer';
-@import 'layout/fill-cards';
+/* @import 'layout/fill-cards';
 @import 'layout/design-cards';
-@import 'layout/share-cards';
+@import 'layout/share-cards'; */
 @import 'pages/cards';
+
+.collapsed {
+    display: none;
+  }
+.flip{
+  transform: rotate(180deg);
+}
