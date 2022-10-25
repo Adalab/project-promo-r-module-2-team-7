@@ -5,18 +5,18 @@
 @import 'components/code';
 @import 'components/links';
 @import 'layout/mainpage';
-@import 'layout/header';
+@import 'layout/header-landing';
 @import 'layout/main-landing';
 @import 'layout/preview';
 @import 'layout/footer';
-/* @import 'layout/fill-cards';
+@import 'layout/header-cards';
+@import 'layout/main-cards';
+@import 'layout/fill-cards';
 @import 'layout/design-cards';
-@import 'layout/share-cards'; */
-@import 'pages/cards';
-
+@import 'layout/share-cards';
 .collapsed {
-    display: none;
-  }
+  display: none;
+}
 .flip{
-  transform: rotate(180deg);
+transform: rotate(180deg);
 }
