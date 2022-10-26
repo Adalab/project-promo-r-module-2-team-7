@@ -1,32 +1,35 @@
 'use strict';
 
-//Test adding classes to HTML element
-
+//Create variable for article
 const previewArticleElement = document.querySelector('.js-article');
 
+//Create variables for each palette radio input
 const paletteOne =  document.querySelector('.js-palette-one');
 const paletteTwo =  document.querySelector('.js-palette-two');
 const paletteThree =  document.querySelector('.js-palette-three');
 
+//Add even listener in paletteOne, add class and remove rest
 paletteOne.addEventListener('click',()=>{
     previewArticleElement.classList.remove('paletteTwo'); 
     previewArticleElement.classList.remove('paletteThree'); 
     previewArticleElement.classList.add('paletteOne');    
 });
 
+//Add even listener in paletteTwo, add class and remove rest
 paletteTwo.addEventListener('click',()=>{
     previewArticleElement.classList.remove('paletteOne'); 
     previewArticleElement.classList.remove('paletteThree'); 
     previewArticleElement.classList.add('paletteTwo');
 });
 
+//Add even listener in paletteThree, add class and remove rest
 paletteThree.addEventListener('click',()=>{
     previewArticleElement.classList.remove('paletteOne'); 
     previewArticleElement.classList.remove('paletteTwo'); 
     previewArticleElement.classList.add('paletteThree');
 });
 
-/*OTRA FORMA DE HACERLO:
+/*ALTERNATIVE
 // Create variable for article and radio button
 const previewArticleElement = document.querySelector('.js-article');
 const radioInput =  document.querySelector('.design__palette');
