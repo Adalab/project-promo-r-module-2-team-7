@@ -1,135 +1,106 @@
 .share {
-  @include resetBorderForm;
-  &__head {
-    cursor: pointer;
-    margin-top: rem(10);
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: rem(30);
-    align-items: center;
-    &__intro{
-        display: flex;
-        align-items: center;
-        gap: rem(10);
-        &__icon {
-        @include iconForm();
-        }
-        &__title {
-          //mixin
-          @include titleForm()
-        }
-      }
-    &__arrow {
-    @include arrow();
-    }
-}
-  
+	@include resetBorderForm;
+	&__head {
+		cursor: pointer;
+		margin-top: rem(10);
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: rem(30);
+		align-items: center;
+		
+		&__intro {
+			display: flex;
+			align-items: center;
+			gap: rem(10);
+			&__icon {
+				@include iconForm();
+			}
+			&__title {
+				//mixin
+				@include titleForm();
+			}
+		}
+		&__arrow {
+			@include arrow();
+		}
+	}
 
-  &__div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-.createbutton-of{
-  cursor: pointer;
-  margin-bottom: rem(30);
-    margin-top: 33px;
-    background-color: $color-grey-not-orange;
-    font-size: rem(18);
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 13px 18px 13px 17px;
-    color: $color-white-two;
-    border-radius: 12px;
-    font-weight: 600;
-      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-      &:hover {
-        transform: scale(1.1,1.1);
-        transition: transform 2s;
-      }
-      &:not(:hover) {
-        transition: transform 2s;
-      }
-}
-  .createbutton-on {
-    margin-bottom: rem(30);
-    cursor: pointer;
-    margin-top: 33px;
-    background-color: $color-dull-orange;
-    font-size: rem(18);
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 13px 18px 13px 17px;
-    color: $color-white-two;
-    border-radius: 12px;
-    font-weight: 600;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-    &:hover {
-      transform: scale(1.1,1.1);
-      transition: transform 2s;
-    }
-    &:not(:hover) {
-      transition: transform 2s;
-    }
-  }
-  .icon-id {
-    color: $color-white-two;
-    margin-right: 9px;
-  }
-  .lineRectangle {
- 
-border-width: 0;
- border-top: rem(1) solid $color-light-grey-margins;
-    width: rem(280);;
-    
-  
-    margin: 30px 30px 20px 0;
-    @media all and (min-width: 768px) {
-      width: 329px;
-    }
-  }
-  .shareresultbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    &__text {
-      color: $color-gunmetal;
-      font-size: rem(18);
-      margin-bottom: 5px;
-    }
-    &__link {
-      font-size: rem(12);
-      color: $color-dull-orange;
-    }
-    &__twitterbox {
-      margin-left: 20%;
-      margin-right: 20%;
-      background-color: #00a0f5;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-      margin-top: 10px;
-      border-radius: 3px;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-      &--twitter {
-        text-decoration: none;
-        color: $color-white-two;
-        padding: 3px 9px 6px 10.5px;
-        font-size: rem(14);
-        line-height: 1.43;
-      }
-    }
-  }
+	&__div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-  .tweet-icon {
-    align-items: center;
-    font-size: rem(18);
-    margin-right: 9.5px;
-  }
+		.createbutton-of {
+      @include createCardButton();
+			background-color: $color-grey-not-orange;
+		}
+		.createbutton-on {
+      @include createCardButton();
+			background-color: $color-dull-orange;
+			&:hover {
+				transform: scale(1.1, 1.1);
+				transition: transform 2s;
+			}
+			&:not(:hover) {
+				transition: transform 2s;
+			}
+		}
+		.icon-id {
+			color: $color-white-two;
+			margin-right:rem(9);
+		}
+		.lineRectangle {
+			border-width: 0;
+			border-top: rem(1) solid $color-light-grey-margins;
+			width: rem(280);
+      margin-bottom: rem (29);
+			@media all and (min-width: 768px) {
+        width: rem(329);
+			}
+		}
+		.shareresultbox {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		/* 	width: rem(400); */
+			&__text {
+				color: $color-gunmetal;
+				font-size: rem(18);
+        margin-top: rem(20);
+				margin-bottom: rem(5);
+			}
+			&__link {
+				font-size: rem(12);
+				color: $color-dull-orange;
+			}
+			&__twitterbox {
+				margin-left: 20%;
+				margin-right: 20%;
+				background-color: #00a0f5;
+				display: flex;
+				justify-content: center;
+				margin-bottom: rem(30);
+				margin-top: rem(10);
+				border-radius: 3px;
+				box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+				&--twitter {
+					text-decoration: none;
+					color: $color-white-two;
+					padding: 3px 9px 6px 10.5px;
+					font-size: rem(14);
+					line-height: 1.43;
+				}
+			}
+		}
 
-  .collapsed {
-    display: none;
-  }
+		.tweet-icon {
+			align-items: center;
+			font-size: rem(18);
+			margin-right: rem(9.5);
+		}
+	}
+
+	.collapsed {
+		display: none;
+	}
 }

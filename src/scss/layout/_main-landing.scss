@@ -9,19 +9,19 @@
     color: $color-dull-orange;
     font-size: rem(19.2);
     font-weight: 900;
-    margin-top: 35.4px;
+    margin-top:  rem(35.4);
     @media all and (min-width: 768px) {
       font-size: rem(24);
-      margin-top: 31px;
+      margin-top: rem(31);
     }
   }
   &__subtitle {
-    max-width: 268px;
+    max-width: rem(268); 
     text-align: center;
     font-size: rem(12.8);
     color: $color-dark-green-blue;
     @media all and (min-width: 768px) {
-      max-width: 320px;
+      max-width: rem(320);
       font-size: rem(16);
     }
   }
@@ -29,60 +29,57 @@
 
 
 .box {
-  width: 268px;
-  height: 73.8px;
-  padding: 15px 31.5px 17.8px 31.5px;
-  border: solid 1.6px $color-dull-orange;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 40px;
-  margin-top: 17.8px;
+  width: rem(268); 
+  height: rem(78.8);
+  padding: rem(15) rem(20) rem(17) rem(31);
+  border: solid rem(1.6) $color-dull-orangeop;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: rem(34) rem(24);
+  align-items: center;
+  margin-top: rem(17.8);
   border-radius: 4px;
-  border: solid 1.6px $color-dull-orangeop;
   color: $color-gunmetal;
-
   @media all and (min-width: 768px) {
-    border-radius: 5px;
-    border: solid 2px $color-dull-orangeop;
-    margin-top: 27px;
-    column-gap: 24px;
-    width: 325px;
-    height: 86px;
-    padding: 15px 20 22px 5px;
+    border: solid rem(2) $color-dull-orangeop;
+    margin-top: rem(27);
+    width: rem(325); 
+    height: rem(86);
+
   }
-  &__element {
-    align-items: center;
-    text-align: center;
-    opacity: unset;
-  }
+
   &__text {
     font-size: rem(12.8);
     @media all and (min-width: 768px) {
       font-size: rem(16);
     }
   }
+  .icon-main {
+    @include iconLanding();
+  }
 }
-.icon-main {
-  @include iconLanding();
+.spanFlexText{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  
 }
 
 .start {
-  padding: 10px 20px 10px 20px;
-  margin-top: 38.6px;
-  margin-bottom: 30px;
+  padding: rem(10) rem(20) rem(10) rem(20);
+  margin-top:  rem(38.6);
   align-items: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-white-two;
   border-radius: 21px;
-  width: 129px;
-  height: 42px;
   background-color: #438792;
   @media all and (min-width: 768px) {
-    margin-top: 186px;
-    width: 129px;
-    height: 42px;
-    margin-bottom: 59px;
+    margin-top:rem(186);
+  
   }
   &:hover {
 

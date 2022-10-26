@@ -1,52 +1,68 @@
 //Forms
 
 @mixin titleForm() {
-    text-transform: uppercase;
-    color: $color-gunmetal;
-    font-size: rem(18);
-    font-weight: 600;
-   
+	text-transform: uppercase;
+	color: $color-gunmetal;
+	font-size: rem(18);
+	font-weight: 600;
 }
 
 @mixin labelsForm() {
-    color: $color-dark-green-blue;
-    font-size: rem(14);
+	color: $color-dark-green-blue;
+	font-size: rem(14);
 }
 
 @mixin boxesForm() {
-    border: solid 1px $color-hospital-green;
-    height: rem(30);
-    margin-top: rem(7);
-    font-size: rem(14);
-    padding-left: rem(10);
-    margin-bottom: rem(18);
+	border: solid 1px $color-hospital-green;
+	height: rem(30);
+	margin-top: rem(7);
+	font-size: rem(14);
+	padding-left: rem(10);
+	margin-bottom: rem(18);
 }
 
 @mixin arrow() {
-    color: $color-gunmetal;
-    font-size: 18px;
-    text-align: right;
-    cursor: pointer;
+	color: $color-gunmetal;
+	font-size: 18px;
+	text-align: right;
+	cursor: pointer;
 }
 
 @mixin iconForm() {
-    color: $color-dull-orange;
-    width: rem(21);
-    height: rem(18);
+	color: $color-dull-orange;
+	transform: translateY(2.5px); // to be checked - M
+	width: rem(21);
+	height: rem(18);
 }
 
-@mixin iconLanding(){
-    color: $color-dull-orange;
-    width: rem(32);
-    height: rem(26);
-    @media all and (min-width: 768px) {
-        height: rem(29);
-    }
+@mixin iconLanding() {
+	color: $color-dull-orange;
+	font-size: rem(28);
+	/* width: rem(32);
+	height: rem(26); */
+	@media all and (min-width: 768px) {
+		/* height: rem(29); */
+		font-size: rem(28);
+	}
 }
 
 @mixin resetBorderForm() {
-    border: 0; 
-    border-bottom: rem(1);
-    border-color: $color-white-two;
-    border-bottom: 1px solid $color-light-grey-margins;
+	border: 0;
+	border-bottom: rem(1);
+	border-color: $color-white-two;
+	border-bottom: 1px solid $color-light-grey-margins;
+}
+
+@mixin createCardButton() {
+	cursor: pointer;
+	margin-bottom: rem(30);
+	margin-top: 33px;
+	font-size: rem(18);
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 13px 18px 13px 17px;
+	color: $color-white-two;
+	border-radius: 12px;
+	font-weight: 600;
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 }

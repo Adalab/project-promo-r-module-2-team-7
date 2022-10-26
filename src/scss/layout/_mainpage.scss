@@ -1,19 +1,23 @@
+/* body{
+    height: 100vh;
+} */
 .headermain-main{
     height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: $color-white-four;
-    
+    padding-bottom: rem(30);
     @media all and (min-width: 768px) {
-        height: 94vh;
+       /*  height: 94vh; */
+        padding: rem(59);
     }
  
 }
 .footer-main{
-    height: 10vh;
+    height: rem(110);
     @media all and (min-width: 768px) {
-        height: 6vh;
+        height: rem(110);
     }
 }
