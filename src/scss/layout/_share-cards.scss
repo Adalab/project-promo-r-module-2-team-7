@@ -11,26 +11,29 @@
         display: flex;
         align-items: center;
         gap: rem(10);
+        &__icon {
+        @include iconForm();
+        }
+        &__title {
+          //mixin
+          @include titleForm()
+        }
+      }
+    &__arrow {
+    @include arrow();
     }
-   
-  }
-  &__icon {
-    @include iconForm();    
-    background-color: #00a0f5;
-  }
-  &__title {
-    //mixin
-    @include titleForm()
-  }
+}
+  
+
   &__div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
- 
   
 .createbutton-of{
   cursor: pointer;
+  margin-bottom: rem(30);
     margin-top: 33px;
     background-color: $color-grey-not-orange;
     font-size: rem(18);
@@ -50,6 +53,7 @@
       }
 }
   .createbutton-on {
+    margin-bottom: rem(30);
     cursor: pointer;
     margin-top: 33px;
     background-color: $color-dull-orange;
@@ -74,10 +78,12 @@
     margin-right: 9px;
   }
   .lineRectangle {
-    width: 280px;
-    height: 4px;
+ 
+border-width: 0;
+ border-top: rem(1) solid $color-light-grey-margins;
+    width: rem(280);;
     
-    background-color: rebeccapurple;
+  
     margin: 30px 30px 20px 0;
     @media all and (min-width: 768px) {
       width: 329px;
@@ -122,9 +128,7 @@
     font-size: rem(18);
     margin-right: 9.5px;
   }
-  .share__arrow-up {
-    color: $color-gunmetal;
-  }
+
   .collapsed {
     display: none;
   }

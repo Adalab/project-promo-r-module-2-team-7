@@ -7,13 +7,13 @@
             display: flex;
             gap: rem(10);
             margin-bottom: rem(30);
-            }
             &__icon {
             order: -1;
             @include iconForm();
             }
             &__title {
             @include titleForm();
+            }
         }
         &__arrow {
             @include arrow();

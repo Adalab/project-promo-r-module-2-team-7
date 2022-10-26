@@ -8,12 +8,12 @@
             display: flex;
             gap: rem(10);
             margin-bottom: rem(30);
-        }
-        &__icon {
-        @include iconForm();    
-        }
-        &__title {
-        @include titleForm();
+            &__icon {
+            @include iconForm();    
+            }
+            &__title {
+            @include titleForm();
+            }
         }
         &__arrow {
         @include arrow();

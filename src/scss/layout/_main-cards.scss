@@ -9,8 +9,10 @@
 }
 
 .section{
+    
     margin: rem(27) rem(20) rem(31) rem(20);
     @media all and (min-width: 768px) {
+        width: rem(329);
         margin: 0;
     }
 }

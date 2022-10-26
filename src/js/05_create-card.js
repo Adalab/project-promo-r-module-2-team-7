@@ -1,4 +1,4 @@
-/* 'use strict';
+'use strict';
 
 const createButton = document.querySelector('.js-create-button');
 const shareResultBox = document.querySelector('.js-share-result-box');
@@ -12,7 +12,7 @@ createButton.addEventListener('click', (event) => {
     shareResultBox.classList.remove('collapsed');
 
 });
-
+/* 
 const designBigBox = document.querySelector('.js-design-big-box');
 const fillBigBox = document.querySelector('.js-fill-big-box');
 const shareBigBox = document.querySelector('.js-share-big-box');
@@ -69,5 +69,4 @@ shareHead.addEventListener('click', (event) => {
         fillArrow.classList.remove('flip');
     }
 });
-
  */

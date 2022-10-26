@@ -26,10 +26,22 @@
     color: $color-gunmetal;
     font-size: 18px;
     text-align: right;
+    cursor: pointer;
 }
 
 @mixin iconForm() {
-    font-size: rem(18); //to be checked
+    color: $color-dull-orange;
+    width: rem(21);
+    height: rem(18);
+}
+
+@mixin iconLanding(){
+    color: $color-dull-orange;
+    width: rem(32);
+    height: rem(26);
+    @media all and (min-width: 768px) {
+        height: rem(29);
+    }
 }
 
 @mixin resetBorderForm() {

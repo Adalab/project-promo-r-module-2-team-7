@@ -63,11 +63,7 @@
   }
 }
 .icon-main {
-  font-size: rem(22.4);
-  color: $color-dull-orange;
-  @media all and (min-width: 768px) {
-    font-size: rem(28);
-  }
+  @include iconLanding();
 }
 
 .start {
