@@ -47,6 +47,7 @@
 }
 
 @mixin resetBorderForm() {
+	width: rem(329);////to avoid making the form small
 	border: 0;
 	border-bottom: rem(1);
 	border-color: $color-white-two;
