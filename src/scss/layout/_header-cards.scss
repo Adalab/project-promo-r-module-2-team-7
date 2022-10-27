@@ -1,11 +1,18 @@
-.header-cards{
-    background-color: $color-white-two;
+.header__cards{
+    //background-color: $color-white-two;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    margin-left: rem(40);
+    &--profile{
+        width: rem(201);
+        height: rem(50);
+    }
 }
-
+/*
 .profile-cards{
     margin: rem(31) rem(79) rem(30) rem(40);
-    width: rem(200);
     @media all and (min-width: 768px) {
         margin: rem(31) rem(525) rem(30) rem(40); 
     }
-}
+}*/

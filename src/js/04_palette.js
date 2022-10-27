@@ -1,12 +1,12 @@
 'use strict';
 
-//Create variable for article
+/*//Create variable for article
 const previewArticleElement = document.querySelector('.js-article');
 
 //Create variables for each palette radio input
 const paletteOne =  document.querySelector('.js-palette-one');
 const paletteTwo =  document.querySelector('.js-palette-two');
-const paletteThree =  document.querySelector('.js-palette-three');
+const paletteThree =  document.querySelector('.js-palette-three');*/
 
 //Add even listener in paletteOne, add class and remove rest
 paletteOne.addEventListener('click',()=>{

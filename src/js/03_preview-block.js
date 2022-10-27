@@ -38,6 +38,12 @@ resetBtn.addEventListener("click", (event) => {
 	previewArticleMail.href = "#";
 	previewArticleLinkedin.href = "#";
 	previewArticleGitHub.href = "#";
+	paletteOne.checked = true;
+	paletteTwo.checked = false;
+	paletteThree.checked = false;
+	previewArticleElement.classList.remove('paletteTwo'); 
+    previewArticleElement.classList.remove('paletteThree'); 
+    previewArticleElement.classList.add('paletteOne'); 
 });
 
 /////////////////
