@@ -1,6 +1,6 @@
-/* body{
+body{
     height: 100vh;
-} */
+}
 .headermain-main{
     height: 90vh;
     display: flex;
@@ -17,7 +17,5 @@
 }
 .footer-main{
     height: rem(110);
-    @media all and (min-width: 768px) {
-        height: rem(110);
-    }
+  
 }
