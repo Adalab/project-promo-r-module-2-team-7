@@ -47,11 +47,14 @@
 }
 
 @mixin resetBorderForm() {
-	width: rem(329);////to avoid making the form small
+	width: rem(280);
 	border: 0;
 	border-bottom: rem(1);
 	border-color: $color-white-two;
 	border-bottom: 1px solid $color-light-grey-margins;
+	@media all and (min-width: 768px) {
+		width: rem(328);////to avoid making the form small
+	}
 }
 
 @mixin createCardButton() {

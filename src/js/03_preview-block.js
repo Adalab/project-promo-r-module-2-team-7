@@ -38,8 +38,8 @@ resetBtn.addEventListener("click", (event) => {
 	previewArticleMail.href = "#";
 	previewArticleLinkedin.href = "#";
 	previewArticleGitHub.href = "#";
-	paletteOne.checked = true;
-	paletteTwo.checked = false;
+	paletteOne.checked = false;
+	paletteTwo.checked = true;
 	paletteThree.checked = false;
 	previewArticleElement.classList.remove('paletteTwo'); 
     previewArticleElement.classList.remove('paletteThree'); 

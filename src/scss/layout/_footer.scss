@@ -1,13 +1,13 @@
 .footer{
-    height: 10vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     border-top: 1px solid $color-light-grey-margins;
-   //padding: 18px 61px 20px 61px;
+    padding: 18px 61px 20px 61px;
     @media all and (min-width: 768px) {
-        height: 7vh;
+        height: 10vh;
         flex-direction: row;   
         justify-content: space-between;
         align-items: center;
@@ -26,6 +26,7 @@
 
 .logo{
     width: rem(103);
+    height: rem(40);
     margin-top: rem(12);
     @media all and (min-width: 768px) {
         //width: 108px;
