@@ -1,6 +1,7 @@
 .fill {
     @include resetBorderForm;
     &__head {
+        cursor: pointer;
         margin-top: rem(10);
         display: flex;
         justify-content: space-between;
