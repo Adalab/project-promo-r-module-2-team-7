@@ -61,12 +61,19 @@
 	cursor: pointer;
 	margin-bottom: rem(30);
 	margin-top: 33px;
-	font-size: rem(18);
-	font-weight: 600;
-	text-transform: uppercase;
 	padding: 13px 18px 13px 17px;
 	color: $color-white-two;
 	border-radius: 12px;
 	font-weight: 600;
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+	.inputSubmit{
+		font-family: $font-familyOpenSans;
+		font-size: rem(18);
+		font-weight: 600;
+		text-transform: uppercase;
+		border: 0px solid transparent;
+		background-color: inherit;
+		color: inherit;
+		padding: 5px 0px 5px 0px; 
+	}
 }
