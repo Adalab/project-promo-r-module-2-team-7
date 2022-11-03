@@ -5,7 +5,7 @@ const shareResultBox = document.querySelector('.js-share-result-box');
 
 
 createButton.addEventListener('click', (event) => {
-    event.preventDefault()
+    event.preventDefault();
     //console.log('EUREKA'); ///
     createButton.classList.add('createbutton-of');
     createButton.classList.remove('createbutton-on');
