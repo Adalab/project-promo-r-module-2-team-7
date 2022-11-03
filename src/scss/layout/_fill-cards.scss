@@ -54,9 +54,13 @@
         }
     }
 }
-
+//Hide action button for insert photo
 .action__hiddenField {
     display: none;
+}
+ //Image in small box
+.profile__preview{
+    @include imagesForm();
 }
 
 
