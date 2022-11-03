@@ -74,7 +74,6 @@
 				color: $color-dull-orange;
 			}
 			&__twitterbox {
-				
 				background-color: #00a0f5;
 				display: flex;
 				justify-content: center;
@@ -85,7 +84,7 @@
 				&--twitter {
 					text-decoration: none;
 					color: $color-white-two;
-					padding: 3px 9px 6px 10.5px;
+					padding: 4px 8px 4px 8px;
 					font-size: rem(14);
 					line-height: 1.43;
 				}
@@ -95,7 +94,16 @@
 		.tweet-icon {
 			align-items: center;
 			font-size: rem(18);
-			margin-right: rem(9.5);
+			margin-right: rem(6.5);
+			margin-top: rem(6);
+		}
+		
+		.sharetwitter-text{
+			font-size: rem(14);
+			background-color: #00a0f5;
+			color: $color-white-two;
+			border: none;
+			margin-bottom: rem(6);
 		}
 	}
 
