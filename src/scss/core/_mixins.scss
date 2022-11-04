@@ -21,6 +21,13 @@
 	margin-bottom: rem(18);
 }
 
+@mixin imagesForm() {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 @mixin arrow() {
 	color: $color-gunmetal;
 	font-size: 18px;
