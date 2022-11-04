@@ -13,7 +13,7 @@ const checkPalette = (event)=>{
 }
 
 //For... of to add an event listener in each input
-for (input of inputsPalette){
+for (const input of inputsPalette){
     input.addEventListener('click', checkPalette);
 }
 
