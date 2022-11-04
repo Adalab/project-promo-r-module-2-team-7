@@ -9,5 +9,4 @@ createButton.addEventListener('click', (event) => {
     createButton.classList.add('createbutton-of');
     createButton.classList.remove('createbutton-on');
     shareResultBox.classList.remove('collapsed');
-
 });
