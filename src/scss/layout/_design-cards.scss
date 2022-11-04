@@ -1,6 +1,7 @@
 .design {
     @include resetBorderForm;
     &__head {
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         &__intro {
