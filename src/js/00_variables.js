@@ -9,13 +9,14 @@ const emailInput = document.querySelector(".js-input-email");
 const phoneInput = document.querySelector(".js-input-phone");
 const linkedinInput = document.querySelector(".js-input-linkedin");
 const githubInput = document.querySelector(".js-input-github");
+const boxInput = document.querySelector(".js-input-box");
 
 
 //Preview javascript
 //Create variables with article elements
 const previewArticleTitle = document.querySelector(".js-article-title");
 const previewArticleSubtitle = document.querySelector(".js-article-subtitle");
-//const previewArticlePhoto = document.querySelector('.js-article-photo');
+const previewArticlePhoto = document.querySelector('.js-article-photo');
 const previewArticlePhone = document.querySelector(".js-article-link-phone");
 const previewArticleMail = document.querySelector(".js-article-link-mail");
 const previewArticleLinkedin = document.querySelector(".js-article-link-linkedin");
