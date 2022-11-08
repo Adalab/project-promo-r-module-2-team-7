@@ -17,8 +17,6 @@ const data = {
 //Create function to update article
 
 function updatePreview (){
-	//Palette
-	
 	//Name
 	if(data.name === ''){
 		previewArticleTitle.innerHTML = "Nombre Apellido";
@@ -55,31 +53,47 @@ function updatePreview (){
 	}else{
 		previewArticleGitHub.href  = data.github;
 	}
-	//Photo
+}
 
+//Create a function to check input values and fill data object accordingly
+
+function checkTarget (nameElement, valueTarget){
+		//Get input values according to target
+		if(nameElement === "name"){
+			data.name = valueTarget;
+		}else if(nameElement === "job"){
+			data.job = valueTarget;
+		}else if(nameElement === "phone"){
+			data.phone = valueTarget;
+		}else if(nameElement === "email"){
+			data.email = valueTarget;
+		}else if(nameElement === "linkedin"){
+			data.linkedin = valueTarget;
+		}else if(nameElement === "github"){
+			data.github = valueTarget;
+		}
+}
+
+//Function to check photo style URL and to add it to data.photo
+/*
+function checkPhoto(){
+	console.log(data.photo);
+	//if()
+}*/
+
+//Main function associated to event listener in form
+
+function handleInput (event){
+	//Create variables for inputs related to name attribute & value
+	const elementName = event.target.name;
+	const value = event.target.value;
+	checkTarget(elementName, value);
+	//checkPhoto(); Photo to be added
+	updatePreview ();
+	//Save in local storage
+	//saveInLocalStorage();
 }
 
 //Event listener in form 
 
-formElement.addEventListener('input', (event)=>{
-	//Create variables for inputs related to name attribute & value
-	const elementName = event.target.name;
-	const value = event.target.value;
-	//Get input values according to target
-	if(elementName === "name"){
-		data.name = value;
-	}else if(elementName === "job"){
-		data.job = value;
-	}else if(elementName === "phone"){
-		data.phone = value;
-	}else if(elementName === "email"){
-		data.email = value;
-	}else if(elementName === "linkedin"){
-		data.linkedin = value;
-	}else if(elementName === "github"){
-		data.github = value;
-	}
-	//Update article
-	updatePreview ();
-	//Photo to be added
-});
+formElement.addEventListener('input', handleInput);
