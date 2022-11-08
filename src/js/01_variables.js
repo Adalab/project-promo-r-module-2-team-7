@@ -1,3 +1,5 @@
+'use strict';
+
 //Reset javascript
 // Create variable for reset button
 const resetBtn = document.querySelector(".js-reset-btn");
