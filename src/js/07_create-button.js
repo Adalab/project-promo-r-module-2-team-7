@@ -27,6 +27,7 @@ function handleClick (event) {
             changeBtnStyle();
             shareResultBox.classList.remove('collapsed');
             const urlJson = responseJson.cardURL;
+            shareUrl.href = urlJson;
             shareUrl.innerHTML = urlJson;
         }else{
             console.log(responseJson);

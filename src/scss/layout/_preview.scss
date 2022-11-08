@@ -114,10 +114,28 @@
     }
 }
 
+//Color palette base
+
+.paletteBase{
+    .article__header{
+        border-left-color: $color-dirty-blue;
+    } 
+    .article__header--title{
+        color: $color-dark-green-blue; 
+    }
+    .article__nav--link{
+        border-color: $color-hospital-green; 
+        color: $color-dark-green-blue; 
+        &:hover{
+            border-color:$color-dark-green-blue;
+            color: $color-hospital-green;
+        }
+    }
+}
 
 //Color palette 1
 
-.paletteOne{
+.palette-1{
     .article__header{
         border-left-color: $color-dirty-blue;
     } 
@@ -137,7 +155,7 @@
 
 //Color palette 2
 
-.paletteTwo{
+.palette-2{
     .article__header{
         border-left-color: $color-rusty-red; 
     } 
@@ -156,7 +174,7 @@
 
 //Color palette 3
 
-.paletteThree{
+.palette-3{
     .article__header{
         border-left-color: $color-faded-orange; 
     } 

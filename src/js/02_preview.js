@@ -4,7 +4,7 @@
 //Create object for form inputs
 
 const data = {
-	palette: '',
+	palette: '1',
 	name: '',
 	job: '',
 	phone: '',
@@ -17,6 +17,8 @@ const data = {
 //Create function to update article
 
 function updatePreview (){
+	//Palette
+	
 	//Name
 	if(data.name === ''){
 		previewArticleTitle.innerHTML = "Nombre Apellido";
