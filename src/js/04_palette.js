@@ -1,10 +1,12 @@
 'use strict';
 
 function checkPalette(event){
-    previewArticleElement.classList.remove('paletteOne');
-    previewArticleElement.classList.remove('paletteTwo'); 
-    previewArticleElement.classList.remove('paletteThree'); 
-    previewArticleElement.classList.add(event.currentTarget.value);
+    previewArticleElement.classList.remove('palette-1');
+    previewArticleElement.classList.remove('palette-2'); 
+    previewArticleElement.classList.remove('palette-3'); 
+    previewArticleElement.classList.add('palette-'+ event.currentTarget.value);
+    data.palette = event.currentTarget.value;
+    console.log(data.palette);
 }
 
 paletteOne.addEventListener('click', checkPalette);
