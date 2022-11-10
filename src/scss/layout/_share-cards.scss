@@ -72,9 +72,11 @@
 			&__link {
 				font-size: rem(12);
 				color: $color-dull-orange;
+				text-decoration: none;
+				width: 100%;
+				text-align: center;
 			}
 			&__twitterbox {
-				
 				background-color: #00a0f5;
 				display: flex;
 				justify-content: center;
