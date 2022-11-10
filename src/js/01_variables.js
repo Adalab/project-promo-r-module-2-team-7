@@ -38,3 +38,4 @@ const paletteThree =  document.querySelector('.js-palette-three');
 const createButton = document.querySelector('.js-create-button');
 const shareResultBox = document.querySelector('.js-share-result-box');
 const shareUrl = document.querySelector('.js-share-url');
+const linkTwitter = document.querySelector('.js-link-twitter');
