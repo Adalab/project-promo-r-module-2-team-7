@@ -1,6 +1,6 @@
 'use strict';
 
-//Reset javascript
+////Reset javascript
 // Create variable for reset button
 const resetBtn = document.querySelector(".js-reset-btn");
 //Create variables with form inputs
@@ -14,7 +14,7 @@ const githubInput = document.querySelector(".js-input-github");
 const boxInput = document.querySelector(".js-input-box");
 
 
-//Preview javascript
+////Preview javascript
 //Create variables with article elements
 const previewArticleTitle = document.querySelector(".js-article-title");
 const previewArticleSubtitle = document.querySelector(".js-article-subtitle");
@@ -25,10 +25,16 @@ const previewArticleLinkedin = document.querySelector(".js-article-link-linkedin
 const previewArticleGitHub = document.querySelector(".js-article-link-github");
 
 
-//Palette javascript
+////Palette javascript
 //Create variable for article to change palette colours
 const previewArticleElement = document.querySelector('.js-article');
 //Create variables for each palette radio input
 const paletteOne =  document.querySelector('.js-palette-one');
 const paletteTwo =  document.querySelector('.js-palette-two');
 const paletteThree =  document.querySelector('.js-palette-three');
+
+////Create button javascript
+//Create variables 
+const createButton = document.querySelector('.js-create-button');
+const shareResultBox = document.querySelector('.js-share-result-box');
+const shareUrl = document.querySelector('.js-share-url');
