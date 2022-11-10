@@ -34,18 +34,18 @@ phoneInput.addEventListener("input", (e) => {
 linkedinInput.addEventListener("input", (e) => {
     e.preventDefault();
     const linkedinInputValue = e.currentTarget.value;
-    if( /^(?:http(?:s)?:\/\/)?(?:www\.|\w\w\.)?linkedin\.com\/((?:in)\/(?:[a-zA-Z0-9-]{5,30}(?:\/)?)|(?:profile\/)(?:view\?id=[0-9]+))?$/.test(linkedinInputValue) !== true) {
+    if( /^[a-zA-Z0-9._-]{5,30}$/.test(linkedinInputValue) !== true) {
         linkedinInput.style.border = "thin solid red"
     } else {
         linkedinInput.style.border = "thin solid #a2deaf";
     }
 });
 
-// validate GitHub url
+//validate GitHub url
 githubInput.addEventListener("input", (e) => {
     e.preventDefault();
     const githubInputValue = e.currentTarget.value;
-    if( /^(?:http(?:s)?:\/\/)?(?:www\.|\w\w\.)?github\.com\/\/((?:[a-zA-Z0-9-]{5,30}(?:\/)?)|(?:profile\/)(?:view\?id=[0-9]+))?$/.test(githubInputValue) !== true) {
+    if( /^[a-zA-Z0-9._-]{5,30}$/.test(githubInputValue) !== true) {
         githubInput.style.border = "thin solid red"
     } else {
         githubInput.style.border = "thin solid #a2deaf";
