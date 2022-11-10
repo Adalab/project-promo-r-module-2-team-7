@@ -17,10 +17,12 @@ function handleCreateClick (event) {
     })
         .then((response)=> response.json())
         .then((responseJson)=>{
+            console.log(responseJson);
             if(responseJson.success){
                 changeBtnStyle();
                 shareResultBox.classList.remove('collapsed');
                 const urlJson = responseJson.cardURL;
+                linkTwitter.href = `https://twitter.com/intent/tweet?text=Hola,%20os%20comparto%20mi%20tarjeta:%0a&url=${urlJson}`;
                 shareUrl.href = urlJson;
                 shareUrl.innerHTML = urlJson;
             }else{
