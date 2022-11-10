@@ -36,7 +36,7 @@ function reviewClickPlace(actualClickPlace) {
         designArrowDown.classList.remove('collapsed');
     }
 }
-/*
+
 function addClass() {
     //Boxes
     designBigBox.classList.add('collapsed');
@@ -49,11 +49,11 @@ function addClass() {
     fillArrowDown.classList.add('collapsed');
     shareArrowUp.classList.remove('collapsed');
     shareArrowDown.classList.add('collapsed');
-}*/
+}
 
 function handleClick(event) {
     event.preventDefault();
-    //addClass();
+    addClass();
     reviewClickPlace(event.currentTarget); //because we have here the listener
 }
 
