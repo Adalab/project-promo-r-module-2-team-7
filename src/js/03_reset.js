@@ -32,11 +32,15 @@ resetBtn.addEventListener("click", (event) => {
     shareUrl.innerHTML = '';
 	//Hide share button and restore class
 	shareResultBox.classList.add('collapsed');
-	changeBtnStyle();
+	createButton.classList.add('createbutton-on');
 	//Hide share section
 	shareBigBox.classList.add('collapsed');
 	shareArrowUp.classList.remove('collapsed');
 	shareArrowDown.classList.add('collapsed');
+	//Hide fill section
+	fillBigBox.classList.add('collapsed');
+    fillArrowUp.classList.remove('collapsed');
+    fillArrowDown.classList.add('collapsed');
 	//Open design section
 	designBigBox.classList.remove('collapsed');
 	designArrowUp.classList.add('collapsed');
