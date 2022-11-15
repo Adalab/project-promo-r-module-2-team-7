@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-color: $color-main;
     border-top: 1px solid $color-light-grey-margins;
     padding: 18px 61px 20px 61px;
     @media all and (min-width: 768px) {
@@ -21,7 +22,7 @@
 .copy{
     font-family: $font-familyOpenSans;
     font-size: rem(14);
-    color: $color-brownish-greyop;
+    color: $color-second;
 }
 
 .logo{

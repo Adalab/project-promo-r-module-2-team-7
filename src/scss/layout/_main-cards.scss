@@ -7,7 +7,7 @@
 .main__cards{
     min-height: 79vh;
     @media all and (min-width: 768px) {
-        background-image: linear-gradient($color-white-four, $color-white-two);
+        background-color: $color-second;
         min-height: 77vh;
         display: flex;
         flex-direction: row-reverse;

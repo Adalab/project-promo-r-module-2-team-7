@@ -2,7 +2,7 @@
 /*General section*/
 .preview{
     /*General properties for main container*/
-    background-image: $color-gradient;
+    background-image: url("../images/Mesa de trabajo 1.png");
     min-height: rem(457);
     height: fit-content;
     padding-top: rem(40);
@@ -32,8 +32,8 @@
     width: rem(75);
     height: rem(30);
     border-radius: rem(15);
-    border: 1px solid $color-white-two;
-    background-color: transparent;
+    border: 1px solid $color-light;
+    background-color: #ffffff55;
     /*Flexbox*/
     display: flex;
     flex-direction: row-reverse;
@@ -45,7 +45,7 @@
     font-size: rem(11);
     text-transform: uppercase;
     &:hover{
-        background-color: $color-white-two;
+        background-color: $color-light;
     }
 }
 
@@ -55,7 +55,7 @@
     width: rem(240);
     height: rem(329);
     height: fit-content;
-    background-color: $color-white-two;
+    background-color: $color-light;
     box-shadow: 0 0 rem(3) 0 rgba(0, 0, 0, 0.35), 0 0 rem(10) 0 rgba(0, 0, 0, 0.2);
     /*Flexbox*/
     display: flex;
@@ -84,7 +84,7 @@
     /*Photo*/
     &__photo{
         height: 200px;
-        background-image: url("../images/profile-picture.jpg");
+        background-image: url("../images/b8766cd53b5e1529712ed7e49365b7d4.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
