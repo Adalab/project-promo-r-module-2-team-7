@@ -31,8 +31,22 @@ function handleCreateClick (event) {
                 shareUrl.href = urlJson;
                 shareUrl.innerHTML = urlJson;
             }else{
-                //Alert 
-                alert('Por favor, verifica que has rellenado todos los campos obligatorios.');
+                //Function to show alert box
+                showAlert();
+                //Select all alert buttons (if error happens several times)
+                const alertBtnEl = document.querySelectorAll('.js-alert-btn');
+                //Select all alert boxes (if error happens several times)
+                const alertBoxEl = document.querySelectorAll('.js-alert-box');
+                //Function to hide alert box
+                function handleClickAlert(){
+                    for (const alert of alertBoxEl){
+                        alert.classList.add('js-remove');
+                    }
+                }
+                //Event listener alert button
+                for (const btn of alertBtnEl){
+                    btn.addEventListener('click', handleClickAlert);
+                }
                 //Hide share section
                 shareBigBox.classList.add('collapsed');
                 shareArrowUp.classList.remove('collapsed');
