@@ -2,8 +2,13 @@
 
 //Function to change button style
 function changeBtnStyle() {
-    createButton.classList.add('createbutton-of');
-    createButton.classList.remove('createbutton-on');
+    if(createButton.classList.contains('createbutton-on')){
+        createButton.classList.remove('createbutton-on');
+        createButton.classList.add('createbutton-of');
+    }else{
+        createButton.classList.add('createbutton-on');
+        createButton.classList.remove('createbutton-of');
+    }
 }
 
 

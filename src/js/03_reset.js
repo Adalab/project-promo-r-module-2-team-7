@@ -26,5 +26,20 @@ resetBtn.addEventListener("click", (event) => {
 	previewArticleElement.classList.remove("palette-2");
 	previewArticleElement.classList.remove("palette-3");
 	previewArticleElement.classList.add("palette-1");
+	//Empty share section
+	linkTwitter.href = '#';
+    shareUrl.href = '#';
+    shareUrl.innerHTML = '';
+	//Hide share button and restore class
+	shareResultBox.classList.add('collapsed');
+	changeBtnStyle();
+	//Hide share section
+	shareBigBox.classList.add('collapsed');
+	shareArrowUp.classList.remove('collapsed');
+	shareArrowDown.classList.add('collapsed');
+	//Open design section
+	designBigBox.classList.remove('collapsed');
+	designArrowUp.classList.add('collapsed');
+	designArrowDown.classList.remove('collapsed');
 });
 

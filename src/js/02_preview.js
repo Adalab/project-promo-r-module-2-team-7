@@ -66,13 +66,13 @@ function updatePreview (){
 	if(data.linkedin === ''){
 		previewArticleLinkedin.href = "#";
 	}else{
-		previewArticleLinkedin.href  = data.linkedin;
+		previewArticleLinkedin.href  = `https://www.linkedin.com/in/${data.linkedin}`;
 	}
 	//Github
 	if(data.github === ''){
 		previewArticleGitHub.href = "#";
 	}else{
-		previewArticleGitHub.href  = data.github;
+		previewArticleGitHub.href  = `https://github.com/${data.github}`;
 	}
 }
 

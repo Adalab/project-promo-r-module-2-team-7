@@ -1,0 +1,9 @@
+.js-hidden{
+    display: none;
+}
+
+.js-invalid-msg{
+    font-size: rem(11);
+    transform: translateY(-80%);
+    color: $color-tomato;
+}
