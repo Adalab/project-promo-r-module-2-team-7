@@ -80,6 +80,7 @@
                 background-color: $color-light-grey-blue;
             }
             &--selector {
+                cursor: pointer;
                 margin-right: rem(10); //how to change the dot in radio
             }
         }
