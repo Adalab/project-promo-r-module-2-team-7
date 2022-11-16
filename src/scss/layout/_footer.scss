@@ -20,9 +20,14 @@
     }
 
 .copy{
+    transform: translateY(10px);
     font-family: $font-familyOpenSans;
     font-size: rem(14);
     color: $color-second;
+    @media all and (min-width: 768px) {
+        transform: translateY(0px);   
+    }
+
 }
 
 .logo{
