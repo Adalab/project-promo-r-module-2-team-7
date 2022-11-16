@@ -1,71 +1,62 @@
-'use strict';
+"use strict";
 
-const createButton = document.querySelector('.js-create-button');
-const shareResultBox = document.querySelector('.js-share-result-box');
-
-
-createButton.addEventListener('click', (event) => {
-    event.preventDefault()
-    createButton.classList.add('createbutton-of');
-    createButton.classList.remove('createbutton-on');
-    shareResultBox.classList.remove('collapsed');
-
-});
-/* 
-const designBigBox = document.querySelector('.js-design-big-box');
-const fillBigBox = document.querySelector('.js-fill-big-box');
-const shareBigBox = document.querySelector('.js-share-big-box');
+//section headers
 const designHead = document.querySelector('.js-design-head');
+const designBigBox = document.querySelector('.js-design-big-box');
 const fillHead = document.querySelector('.js-fill-head');
+const fillBigBox = document.querySelector('.js-fill-big-box');
 const shareHead = document.querySelector('.js-share-head');
-const designArrow = document.querySelector('.js-design-arrow');
-const fillArrow = document.querySelector('.js-fill-arrow');
-const shareArrow = document.querySelector('.js-share-arrow');
+const shareBigBox = document.querySelector('.js-share-big-box');
+//arrows
+const designArrowUp = document.querySelector('.js-design-arrow-up');
+const designArrowDown = document.querySelector('.js-design-arrow-down');
+const fillArrowUp = document.querySelector('.js-fill-arrow-up');
+const fillArrowDown = document.querySelector('.js-fill-arrow-down');
+const shareArrowUp = document.querySelector('.js-share-arrow-up');
+const shareArrowDown = document.querySelector('.js-share-arrow-down');
+ //all section headers
+const allHead = [designHead, fillHead, shareHead];
 
-designHead.addEventListener('click', (event) => {
-
-    event.preventDefault()
-    console.log('EUREKA BABY'); ///
-
-    if (shareBigBox.classList.contains('collapsed')) {
+//functions
+function reviewClickPlace(actualClickPlace) {
+    switch (actualClickPlace) {
+    case fillHead:
+        fillBigBox.classList.remove('collapsed');
+        fillArrowUp.classList.add('collapsed');
+        fillArrowDown.classList.remove('collapsed');
+        break;
+    case shareHead:
         shareBigBox.classList.remove('collapsed');
-    } else {
-
+        shareArrowUp.classList.add('collapsed');
+        shareArrowDown.classList.remove('collapsed');
+        break;
+    case designHead: //to avoid possible error if something changes
+        designBigBox.classList.remove('collapsed');
+        designArrowUp.classList.add('collapsed');
+        designArrowDown.classList.remove('collapsed');
     }
-    shareBigBox.classList.add('collapsed');
-    fillBigBox.classList.add('collapsed');
-    designBigBox.classList.remove('collapsed');
+}
 
-});
-
-fillHead.addEventListener('click', (event) => {
-    event.preventDefault()
-    console.log('EUREKA OLE OLE'); ///
-    fillBigBox.classList.remove('collapsed');
-    designBigBox.classList.add('collapsed');
-    shareBigBox.classList.add('collapsed');
-
-    if (fillHead.classList.contains('collapsed')) {
-        fillArrow.classList.add('flip');
-    }
-    else {
-        fillArrow.classList.remove('flip');
-    }
-});
-
-shareHead.addEventListener('click', (event) => {
-    event.preventDefault()
-    console.log('EUREKA  YIHA'); ///
-    shareBigBox.classList.remove('collapsed');
+function addClass() {
+    //Boxes
     designBigBox.classList.add('collapsed');
     fillBigBox.classList.add('collapsed');
-    if (shareBigBox.classList.contains('collapsed')) {
-        console.log('añade flip');
-        designArrow.classList.add('flip');
-    }
-    else if (!(shareBigBox.classList.contains('collapsed'))) {
-        console.log('quita flip');
-        fillArrow.classList.remove('flip');
-    }
-});
- */
+    shareBigBox.classList.add('collapsed');
+    // arrows
+    designArrowUp.classList.remove('collapsed');
+    designArrowDown.classList.add('collapsed');
+    fillArrowUp.classList.remove('collapsed');
+    fillArrowDown.classList.add('collapsed');
+    shareArrowUp.classList.remove('collapsed');
+    shareArrowDown.classList.add('collapsed');
+}
+
+function handleClick(event) {
+    event.preventDefault();
+    addClass();
+    reviewClickPlace(event.currentTarget); //because we have here the listener
+}
+
+for (let selector of allHead) {
+    selector.addEventListener('click', handleClick);
+}
