@@ -22,11 +22,11 @@ On the left, you can see a toggled form that covers all the options you have to 
 
 The sections are:
 
-1. 'Diseña'('Design'): you can choose between 3 different palettes.
-2. 'Rellena'('Fill'): you need to fill all the boxes so the information in your cards is updated. All fields are compulsory except the telephone number ('Teléfono'). We are not sure that all minions have one! If any of the information happens to be in an unwanted format, the box is going to become red.
-   NOTE: you can add either an image or a GIF that represents you for your card.
-   NOTE: in LinkedIn and GitHub boxes, you only need to add your profile, not the complete url.
-3. 'Comparte': allows you to create your card in two different ways: by giving you an url to share everywhere you like, or by creating for you a new twit in you Twitter account ready to be sent. If there is anything wrong with your information that you didn't detected before, this won't create your card, but to reopened the 'Rellena' section so you can fix it.
+- 'Diseña'('Design'): you can choose between 3 different palettes.
+- 'Rellena'('Fill'): you need to fill all the boxes so the information in your cards is updated. All fields are compulsory except the telephone number ('Teléfono'). We are not sure that all minions have one! If any of the information happens to be in an unwanted format, the box is going to become red.
+  NOTE: you can add either an image or a GIF that represents you for your card.
+  NOTE: in LinkedIn and GitHub boxes, you only need to add your profile, not the complete url.
+- 'Comparte': allows you to create your card in two different ways: by giving you an url to share everywhere you like, or by creating for you a new twit in you Twitter account ready to be sent. If there is anything wrong with your information that you didn't detected before, this won't create your card, but to reopened the 'Rellena' section so you can fix it.
 
 On the right, there is the preview, that means that you can see how is your card looking at any moment of the developing process.
 Together with this, you can always click the reset button if you are unhappy an restart everything.
