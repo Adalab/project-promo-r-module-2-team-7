@@ -12,8 +12,8 @@ resetBtn.addEventListener("click", (event) => {
 	githubInput.value = '';
 	boxInput.style = '';
 	//Preview article
-	previewArticleTitle.innerHTML = "Nombre Apellido";
-	previewArticleSubtitle.innerHTML = "Front-end developer";
+	previewArticleTitle.innerHTML = "Minion Stuart";
+	previewArticleSubtitle.innerHTML = "Despicable villain";
 	previewArticlePhoto.style = "./images/profile-picture.jpg"; //Verify if it works once merge get-Avatar has been done
 	previewArticlePhone.href = `tel:${"#"}`;
 	previewArticleMail.href = `mailto:${"#"}`;

@@ -5,7 +5,7 @@
 .js-invalid-msg{
     font-size: rem(11);
     transform: translateY(-80%);
-    color: $color-tomato;
+    color: $color-light-op;
 }
 
 .js-alert-box{
@@ -13,7 +13,12 @@
     width: rem(380);
     height: rem(200);
     border-radius: rem(20);
-    background-color: $color-white-four;
+    background-image: url(../images/transparent-minion.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: rem(30) center;
+    background-color: $color-main;
+    padding-left: rem(90);
     /*Font*/
     font-size: rem(14);
     text-align: center;
@@ -39,12 +44,15 @@
     /*General properties*/
     width: rem(100);
     height: rem(25);
-    background-color: $color-faded-orange;
+    background-color: $color-extra;
     border: none;
     border-radius: rem(5);
     /*Font*/
-    color: $color-white-two;
+    color: $color-light;
     font-size: rem(14);
+    &:hover{
+        background-color: $color-second;
+    }
 }
 
 .js-remove{

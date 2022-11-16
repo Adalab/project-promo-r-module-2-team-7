@@ -40,13 +40,13 @@ function checkTarget (nameElement, valueTarget){
 function updatePreview (){
 	//Name
 	if(data.name === ''){
-		previewArticleTitle.innerHTML = "Nombre Apellido";
+		previewArticleTitle.innerHTML = "Minion Stuart";
 	}else{
 		previewArticleTitle.innerHTML = data.name;
 	}
 	//Job
 	if(data.job === ''){
-		previewArticleSubtitle.innerHTML = "Front-end developer";
+		previewArticleSubtitle.innerHTML = "Despicable villain";
 	}else{
 		previewArticleSubtitle.innerHTML = data.job;
 	}
