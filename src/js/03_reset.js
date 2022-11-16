@@ -23,8 +23,8 @@ resetBtn.addEventListener("click", (event) => {
 	paletteOne.checked = true;
 	paletteTwo.checked = false;
 	paletteThree.checked = false;
-	previewArticleElement.classList.remove("paletteTwo");
-	previewArticleElement.classList.remove("paletteThree");
-	previewArticleElement.classList.add("paletteOne");
+	previewArticleElement.classList.remove("palette-2");
+	previewArticleElement.classList.remove("palette-3");
+	previewArticleElement.classList.add("palette-1");
 });
 

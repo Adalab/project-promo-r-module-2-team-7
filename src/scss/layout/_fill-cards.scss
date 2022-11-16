@@ -51,6 +51,10 @@
                 width: rem(30);
                 height: rem(30);
                 margin: 0;
+                background-image: url("../images/profile-picture.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
             }
         }
     }
@@ -60,7 +64,7 @@
     display: none;
 }
  //Image in small box
-.profile__preview{
+.profile__preview {
     @include imagesForm();
 }
 
