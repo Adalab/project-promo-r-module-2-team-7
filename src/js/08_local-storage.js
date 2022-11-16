@@ -1,54 +1,45 @@
 
 const savedData = localStorage.getItem('datainputs');
 
-function renderData(data){
-    //Inputs
-    nameInput.value = data.name;
-    jobInput.value = data.job;
-    emailInput.value = data.email;
-    phoneInput.value = data.phone;
-    linkedinInput.value = data.linkedin;
-    githubInput.value = data.github;
-    //Name
-	if(data.name === ''){
-		previewArticleTitle.innerHTML = "Nombre Apellido";
-	}else{
-		previewArticleTitle.innerHTML = data.name;
+
+function renderData(savdata){
+    //Fill input values with LS object
+    nameInput.value = savdata.name;
+    jobInput.value = savdata.job;
+    emailInput.value = savdata.email;
+    phoneInput.value = savdata.phone;
+    linkedinInput.value = savdata.linkedin;
+    githubInput.value = savdata.github;
+	//Check palette value saved in LS 
+	if (savdata.palette === '1'){
+		paletteOne.checked = true;
+		previewArticleElement.classList.add("palette-1");
+		previewArticleElement.classList.remove("palette-2");
+		previewArticleElement.classList.remove("palette-3");
 	}
-	//Job
-	if(data.job === ''){
-		previewArticleSubtitle.innerHTML = "Front-end developer";
-	}else{
-		previewArticleSubtitle.innerHTML = data.job;
+	if(savdata.palette === '2'){
+		paletteTwo.checked = true;
+		previewArticleElement.classList.remove("palette-1");
+		previewArticleElement.classList.add("palette-2");
+		previewArticleElement.classList.remove("palette-3");
 	}
-	//Phone
-	if(data.phone === ''){
-		previewArticlePhone.href = `tel:${"#"}`;
-	}else{
-		previewArticlePhone.href = `tel:${data.phone}`; 
+	if(savdata.palette === '3'){
+		paletteThree.checked = true;
+		previewArticleElement.classList.remove("palette-1");
+		previewArticleElement.classList.remove("palette-2");
+		previewArticleElement.classList.add("palette-3");
 	}
-	//Email
-	if(data.email === ''){
-		previewArticleMail.href = `mailto:${"#"}`;
-	}else{
-		previewArticleMail.href = `mailto:${data.email}`;
-	}
-	//Linkedin
-	if(data.linkedin === ''){
-		previewArticleLinkedin.href = "#";
-	}else{
-		previewArticleLinkedin.href  = data.linkedin;
-	}
-	//Github
-	if(data.github === ''){
-		previewArticleGitHub.href = "#";
-	}else{
-		previewArticleGitHub.href  = data.github;
-	}
+	//Article, update with saved data
+	updatePreview (savdata);
+	//Photo, update background image with saved data
+	profileImage.style.backgroundImage = `url(${savdata.photo})`;
+	profilePreview.style.backgroundImage = `url(${savdata.photo})`;
 }
 
 if(savedData !== null){
+	//Fill data object with LS
+	data = JSON.parse(savedData);
+	//Render LS object 
     renderData(JSON.parse(savedData));
 }
 
-console.log(JSON.parse(savedData))

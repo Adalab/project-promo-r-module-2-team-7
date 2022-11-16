@@ -21,10 +21,10 @@ resetBtn.addEventListener("click", (event) => {
 	previewArticleGitHub.href = "#";
 	//Reset to palette one
 	paletteOne.checked = true;
-	paletteTwo.checked = false;
-	paletteThree.checked = false;
 	previewArticleElement.classList.remove("palette-2");
 	previewArticleElement.classList.remove("palette-3");
 	previewArticleElement.classList.add("palette-1");
+	//Empty local storage
+	savedData = localStorage.removeItem('datainputs');
 });
 

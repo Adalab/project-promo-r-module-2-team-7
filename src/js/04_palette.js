@@ -6,7 +6,6 @@ function checkPalette(event){
     previewArticleElement.classList.remove('palette-3'); 
     previewArticleElement.classList.add('palette-'+ event.currentTarget.value);
     data.palette = event.currentTarget.value;
-    console.log(data.palette);
 }
 
 paletteOne.addEventListener('click', checkPalette);
