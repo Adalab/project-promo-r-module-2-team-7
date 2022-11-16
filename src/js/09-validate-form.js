@@ -5,10 +5,10 @@ emailInput.addEventListener("input", (e) => {
     e.preventDefault();
     const emailInputValue = e.currentTarget.value;
     if (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/.test(emailInputValue) !== true) {
-        emailInput.style.border = "thin solid red";
+        emailInput.style.border = "medium solid #d96863";
         addInvalidMsg(e.currentTarget);
     } else {
-        emailInput.style.border = "thin solid #a2deaf";
+        emailInput.style.border = "medium solid #f8e055";
         delInvalidMsg(e.currentTarget); 
     }
 });
@@ -18,10 +18,10 @@ phoneInput.addEventListener("change", (e) => {
     e.preventDefault();
     const phoneInputValue = e.currentTarget.value;
     if (/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/.test(phoneInputValue) !== true) {
-        phoneInput.style.border = "thin solid red";
+        phoneInput.style.border = "medium solid #d96863";
         addInvalidMsg(e.currentTarget);
     } else{
-        phoneInput.style.border = "thin solid #a2deaf";
+        phoneInput.style.border = "medium solid #f8e055";
         delInvalidMsg(e.currentTarget); 
     }
 });
@@ -31,10 +31,10 @@ linkedinInput.addEventListener("input", (e) => {
     e.preventDefault();
     const linkedinInputValue = e.currentTarget.value;
     if (/^[a-zA-Z0-9._-]{5,30}$/.test(linkedinInputValue) !== true) {
-        linkedinInput.style.border = "thin solid red";
+        linkedinInput.style.border = "medium solid #d96863";
         addInvalidMsg(e.currentTarget);
     } else {
-        linkedinInput.style.border = "thin solid #a2deaf";
+        linkedinInput.style.border = "medium solid #f8e055";
         delInvalidMsg(e.currentTarget); 
     }
 });
@@ -44,10 +44,10 @@ githubInput.addEventListener("input", (e) => {
     e.preventDefault();
     const githubInputValue = e.currentTarget.value;
     if (/^[a-zA-Z0-9._-]{5,30}$/.test(githubInputValue) !== true) {
-        githubInput.style.border = "thin solid red"
+        githubInput.style.border = "medium solid #d96863";
         addInvalidMsg(e.currentTarget);
     } else {
-        githubInput.style.border = "thin solid #a2deaf";
+        githubInput.style.border = "medium solid #f8e055";
         delInvalidMsg(e.currentTarget); 
     }
 });

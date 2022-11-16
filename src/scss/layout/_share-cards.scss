@@ -32,11 +32,11 @@
 		
 		.createbutton-of {
 			@include createCardButton();
-			background-color: $color-grey-not-orange;
+			background-color: $color-grey;
 		}
 		.createbutton-on {
 			@include createCardButton();
-			background-color: $color-dull-orange;
+			background-color: $color-extra;
 			&:hover {
 				transform: scale(1.1, 1.1);
 				transition: transform 2s;
@@ -46,7 +46,7 @@
 			}
 		}
 		.icon-id {
-			color: $color-white-two;
+			color: $color-light;
 			margin-right: rem(9);
 		}
 		.lineRectangle {
@@ -64,14 +64,14 @@
 			align-items: center;
 			/* 	width: rem(400); */
 			&__text {
-				color: $color-gunmetal;
+				color: $color-light;
 				font-size: rem(18);
 				margin-top: rem(20);
 				margin-bottom: rem(5);
 			}
 			&__link {
 				font-size: rem(12);
-				color: $color-dull-orange;
+				color: $color-main;
 				text-decoration: none;
 				width: 100%;
 				text-align: center;
@@ -86,7 +86,7 @@
 				box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 				&--twitter {
 					text-decoration: none;
-					color: $color-white-two;
+					color: $color-light;
 					padding: 3px 9px 6px 10.5px;
 					font-size: rem(14);
 					line-height: 1.43;
