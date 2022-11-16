@@ -86,7 +86,7 @@ function handleInput (event){
 	checkTarget(elementName, value);
 	updatePreview ();
 	//Save in local storage
-	//saveInLocalStorage();
+	localStorage.setItem('datainputs', JSON.stringify(data));
 }
 
 
