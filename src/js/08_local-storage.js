@@ -31,9 +31,11 @@ function renderData(savdata){
 	}
 	//Article, update with saved data
 	updatePreview (savdata);
-	//Photo, update background image with saved data
-	profileImage.style.backgroundImage = `url(${savdata.photo})`;
-	profilePreview.style.backgroundImage = `url(${savdata.photo})`;
+	if(savdata.photo !== ''){
+		//Photo, update background image with saved data
+		profileImage.style.backgroundImage = `url(${savdata.photo})`;
+		profilePreview.style.backgroundImage = `url(${savdata.photo})`;
+	}
 }
 
 if(savedData !== null){
