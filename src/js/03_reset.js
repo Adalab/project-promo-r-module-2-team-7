@@ -52,10 +52,19 @@ resetBtn.addEventListener("click", (event) => {
 		email: '',
 		linkedin: '',
 		github: '',
-		photo: './assets/images/b8766cd53b5e1529712ed7e49365b7d4.jpg',
+		photo: '',
 	};
 	//Empty local storage
 	savedData = localStorage.setItem('datainputs', JSON.stringify(data));
 	savedData = localStorage.removeItem('datainputs');
+	//Restore input boxes
+	emailInput.style.border = "medium solid #f8e055";
+	phoneInput.style.border = "medium solid #f8e055";
+	linkedinInput.style.border = "medium solid #f8e055";
+	githubInput.style.border = "medium solid #f8e055";
+	//Hide invalid mesages
+	for (const inv of allInvalids) {
+            inv.classList.add('js-hidden');
+        }
 });
 
