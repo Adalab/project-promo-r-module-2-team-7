@@ -3,7 +3,7 @@
 
 //Create object to store form inputs
 
-const data = {
+let data = {
 	palette: '1',
 	name: '',
 	job: '',
@@ -37,7 +37,7 @@ function checkTarget (nameElement, valueTarget){
 
 //Create a function to update article with 'data' object values
 
-function updatePreview (){
+function updatePreview (data){
 	//Name
 	if(data.name === ''){
 		previewArticleTitle.innerHTML = "Minion Stuart";
@@ -76,7 +76,6 @@ function updatePreview (){
 	}
 }
 
-
 //Main function associated to event listener in form
 
 function handleInput (event){
@@ -84,12 +83,13 @@ function handleInput (event){
 	const elementName = event.target.name;
 	const value = event.target.value;
 	checkTarget(elementName, value);
-	updatePreview ();
+	updatePreview (data);
 	//Save in local storage
-	//saveInLocalStorage();
+	localStorage.setItem('datainputs', JSON.stringify(data));
 }
 
 
 //Event listener in form 
 
 formElement.addEventListener('input', handleInput);
+

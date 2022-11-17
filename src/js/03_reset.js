@@ -14,15 +14,13 @@ resetBtn.addEventListener("click", (event) => {
 	//Preview article
 	previewArticleTitle.innerHTML = "Minion Stuart";
 	previewArticleSubtitle.innerHTML = "Despicable villain";
-	previewArticlePhoto.style = "./images/profile-picture.jpg"; //Verify if it works once merge get-Avatar has been done
+	previewArticlePhoto.style = "./images/b8766cd53b5e1529712ed7e49365b7d4.jpg"; //Verify if it works once merge get-Avatar has been done
 	previewArticlePhone.href = `tel:${"#"}`;
 	previewArticleMail.href = `mailto:${"#"}`;
 	previewArticleLinkedin.href = "#";
 	previewArticleGitHub.href = "#";
 	//Reset to palette one
 	paletteOne.checked = true;
-	paletteTwo.checked = false;
-	paletteThree.checked = false;
 	previewArticleElement.classList.remove("palette-2");
 	previewArticleElement.classList.remove("palette-3");
 	previewArticleElement.classList.add("palette-1");
@@ -45,5 +43,8 @@ resetBtn.addEventListener("click", (event) => {
 	designBigBox.classList.remove('collapsed');
 	designArrowUp.classList.add('collapsed');
 	designArrowDown.classList.remove('collapsed');
+	//Empty local storage
+	savedData = localStorage.setItem('datainputs', data);
+	savedData = localStorage.removeItem('datainputs');
 });
 

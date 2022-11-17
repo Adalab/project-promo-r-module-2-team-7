@@ -97,7 +97,16 @@
 		.tweet-icon {
 			align-items: center;
 			font-size: rem(18);
-			margin-right: rem(9.5);
+			margin-right: rem(6.5);
+			margin-top: rem(6);
+		}
+		
+		.sharetwitter-text{
+			font-size: rem(14);
+			background-color: #00a0f5;
+			color: $color-light;
+			border: none;
+			margin-bottom: rem(6);
 		}
 	}
 
