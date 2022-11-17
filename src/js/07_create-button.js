@@ -22,7 +22,6 @@ function handleCreateClick (event) {
     })
         .then((response)=> response.json())
         .then((responseJson)=>{
-            console.log(responseJson);
             if(responseJson.success){
                 changeBtnStyle();
                 shareResultBox.classList.remove('collapsed');

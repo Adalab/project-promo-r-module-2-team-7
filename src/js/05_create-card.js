@@ -1,22 +1,5 @@
 "use strict";
 
-//section headers
-const designHead = document.querySelector('.js-design-head');
-const designBigBox = document.querySelector('.js-design-big-box');
-const fillHead = document.querySelector('.js-fill-head');
-const fillBigBox = document.querySelector('.js-fill-big-box');
-const shareHead = document.querySelector('.js-share-head');
-const shareBigBox = document.querySelector('.js-share-big-box');
-//arrows
-const designArrowUp = document.querySelector('.js-design-arrow-up');
-const designArrowDown = document.querySelector('.js-design-arrow-down');
-const fillArrowUp = document.querySelector('.js-fill-arrow-up');
-const fillArrowDown = document.querySelector('.js-fill-arrow-down');
-const shareArrowUp = document.querySelector('.js-share-arrow-up');
-const shareArrowDown = document.querySelector('.js-share-arrow-down');
- //all section headers
-const allHead = [designHead, fillHead, shareHead];
-
 //functions
 function reviewClickPlace(actualClickPlace) {
     switch (actualClickPlace) {

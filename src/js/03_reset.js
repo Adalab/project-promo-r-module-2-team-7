@@ -14,7 +14,7 @@ resetBtn.addEventListener("click", (event) => {
 	//Preview article
 	previewArticleTitle.innerHTML = "Minion Stuart";
 	previewArticleSubtitle.innerHTML = "Despicable villain";
-	previewArticlePhoto.style = "./images/b8766cd53b5e1529712ed7e49365b7d4.jpg"; //Verify if it works once merge get-Avatar has been done
+	previewArticlePhoto.style = "./images/b8766cd53b5e1529712ed7e49365b7d4.jpg"; 
 	previewArticlePhone.href = `tel:${"#"}`;
 	previewArticleMail.href = `mailto:${"#"}`;
 	previewArticleLinkedin.href = "#";
@@ -54,7 +54,6 @@ resetBtn.addEventListener("click", (event) => {
 		github: '',
 		photo: './assets/images/b8766cd53b5e1529712ed7e49365b7d4.jpg',
 	};
-	
 	//Empty local storage
 	savedData = localStorage.setItem('datainputs', JSON.stringify(data));
 	savedData = localStorage.removeItem('datainputs');

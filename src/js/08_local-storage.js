@@ -1,7 +1,7 @@
 
+
 let savedData = localStorage.getItem('datainputs');
 
-console.log(data)
 function renderData(savdata){
     //Fill input values with LS object
     nameInput.value = savdata.name;
