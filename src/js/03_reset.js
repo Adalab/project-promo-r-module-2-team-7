@@ -43,8 +43,20 @@ resetBtn.addEventListener("click", (event) => {
 	designBigBox.classList.remove('collapsed');
 	designArrowUp.classList.add('collapsed');
 	designArrowDown.classList.remove('collapsed');
+	//
+	data = {
+		palette: '1',
+		name: '',
+		job: '',
+		phone: '',
+		email: '',
+		linkedin: '',
+		github: '',
+		photo: './assets/images/b8766cd53b5e1529712ed7e49365b7d4.jpg',
+	};
+	
 	//Empty local storage
-	savedData = localStorage.setItem('datainputs', data);
+	savedData = localStorage.setItem('datainputs', JSON.stringify(data));
 	savedData = localStorage.removeItem('datainputs');
 });
 

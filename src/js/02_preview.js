@@ -11,7 +11,7 @@ let data = {
 	email: '',
 	linkedin: '',
 	github: '',
-	photo: '',
+	photo: './assets/images/b8766cd53b5e1529712ed7e49365b7d4.jpg',
 };
 
 

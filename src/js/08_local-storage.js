@@ -1,7 +1,7 @@
 
 let savedData = localStorage.getItem('datainputs');
 
-
+console.log(data)
 function renderData(savdata){
     //Fill input values with LS object
     nameInput.value = savdata.name;
@@ -40,6 +40,6 @@ if(savedData !== null){
 	//Fill data object with LS
 	data = JSON.parse(savedData);
 	//Render LS object 
-    renderData(JSON.parse(savedData));
+    renderData(data);
 }
 
