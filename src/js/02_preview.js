@@ -40,13 +40,13 @@ function checkTarget (nameElement, valueTarget){
 function updatePreview (data){
 	//Name
 	if(data.name === ''){
-		previewArticleTitle.innerHTML = "Nombre Apellido";
+		previewArticleTitle.innerHTML = "Minion Stuart";
 	}else{
 		previewArticleTitle.innerHTML = data.name;
 	}
 	//Job
 	if(data.job === ''){
-		previewArticleSubtitle.innerHTML = "Front-end developer";
+		previewArticleSubtitle.innerHTML = "Despicable villain";
 	}else{
 		previewArticleSubtitle.innerHTML = data.job;
 	}
@@ -66,13 +66,13 @@ function updatePreview (data){
 	if(data.linkedin === ''){
 		previewArticleLinkedin.href = "#";
 	}else{
-		previewArticleLinkedin.href  = data.linkedin;
+		previewArticleLinkedin.href  = `https://www.linkedin.com/in/${data.linkedin}`;
 	}
 	//Github
 	if(data.github === ''){
 		previewArticleGitHub.href = "#";
 	}else{
-		previewArticleGitHub.href  = data.github;
+		previewArticleGitHub.href  = `https://github.com/${data.github}`;
 	}
 }
 

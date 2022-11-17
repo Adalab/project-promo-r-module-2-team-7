@@ -1,5 +1,5 @@
 
-const savedData = localStorage.getItem('datainputs');
+let savedData = localStorage.getItem('datainputs');
 
 
 function renderData(savdata){
