@@ -3,7 +3,7 @@
 //Main function to get card URL
 function handleCreateClick (event) {
     event.preventDefault(); 
-    fetch('https://awesome-profile-cards.herokuapp.com/card', {
+    fetch('https://dev.adalab.es/api/card', {
     method: 'POST', 
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data),
